@@ -50,12 +50,19 @@
 
 # Spec 002 (SSO) — placeholder tasks
 
-- [ ] T101 Inventory Cloudflare members + IdPs on the BitConcepts account
-- [ ] T102 Member present as tpierson@bitconcepts.tech with correct role
-- [ ] T103 Zero Trust org (team domain bitconcepts.cloudflareaccess.com)
-- [ ] T104 Entra app registration in the BitConcepts tenant (owner
-      admin session); secret goes only into Cloudflare's IdP config
-- [ ] T105 Entra OIDC IdP in Zero Trust; groups claim
+- [x] T101 Inventory done: members tpierson@ + anagaraja@ (both Super
+      Admin, accepted); IdPs inventoried (built-in Cloudflare +
+      Microsoft Entra ID after T105)
+- [x] T102 Member tpierson@bitconcepts.tech present, Super Administrator
+- [x] T103 Zero Trust org live; team domain renamed via API to
+      bitconcepts.cloudflareaccess.com
+- [x] T104 Entra app "Cloudflare Zero Trust" registered (client
+      e8b2b402…, tenant 6d014029…, single-tenant, Web redirect =
+      team-domain callback, security-groups claim on ID token);
+      client secret "Cloudflare Zero Trust IdP" expires 2028-10-10,
+      value only in Cloudflare's IdP config
+- [x] T105 IdP "Microsoft Entra ID" (azureAD) created via API,
+      support_groups on
 - [ ] T106 Dashboard SSO domain bitconcepts.tech verified + enabled,
       Microsoft Entra as the only IdP
 - [ ] T107 Clean-session SSO sign-in test passes (owner)
