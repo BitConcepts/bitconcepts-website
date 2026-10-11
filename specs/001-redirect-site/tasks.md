@@ -63,13 +63,11 @@
       value only in Cloudflare's IdP config
 - [x] T105 IdP "Microsoft Entra ID" (azureAD) created via API,
       support_groups on
-- [ ] T106 Dashboard SSO domain bitconcepts.tech — connector created
-      via API (POST /sso_connectors; the route is /sso_connectors, NOT
-      dashboard-only as first reported) and domain VERIFIED
-      (TXT cloudflare_dashboard_sso=c943796e… published via DNS API);
-      SSO App auto-created, allowed_idps all. Remaining: IdP test
-      (T107) → enable connector + delete built-in Cloudflare IdP so
-      Microsoft Entra is the only IdP
+- [x] T106 Dashboard SSO domain bitconcepts.tech — connector created
+      via API (POST /accounts/{id}/sso_connectors), domain VERIFIED
+      (TXT published via DNS API), connector ENABLED 2026-10-11 after
+      the T107 test passed; built-in Cloudflare IdP deleted; both
+      Access apps restricted to the Entra IdP only
 - [ ] T107 Clean-session SSO sign-in test passes (owner)
 - [ ] T108 Only after T107: enforce SSO-only for the domain
       AEO result: 96/100 (check.aeojs.org, 2026-10-11) — AI Access,
