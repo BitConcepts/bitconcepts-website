@@ -1,0 +1,10 @@
+# BitConcepts
+
+BitConcepts, LLC — Michigan engineering company.
+
+- Consulting and engineering services are now delivered through
+  Axiovex Systems: https://axiovexsystems.com/
+- BitConcepts research (Indus decipherment program, Glossa-Lab) is
+  tracked at: https://bitconcepts.tech/research/
+- Program repository: https://github.com/BitConcepts/glossa-lab
+- Contact: tpierson@bitconcepts.tech
