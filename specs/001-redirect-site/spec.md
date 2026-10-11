@@ -17,6 +17,10 @@ pattern used by the Axiovex and Rockeagle sites.
   https://axiovexsystems.com/, 5-second auto-redirect (JS, with an
   8-second noscript meta-refresh fallback), cancellable via
   "Stay on this page".
+  **Amendment (owner directive, 2026-10-11): the auto-redirect is
+  REMOVED — no JS countdown, no meta-refresh. The homepage is a
+  static landing page so visitors can reach /research/ at their own
+  pace; the Continue button remains for consulting visitors.**
 - FR-002: `/research/` is never redirected. It hosts the research
   tracker supplied by the Glossa-Lab program from its verified
   source pack; until integration it is an honest holding page.
