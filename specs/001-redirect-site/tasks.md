@@ -41,7 +41,7 @@
       2026-10-11, "so folks can go to the research page"): countdown
       JS + noscript meta-refresh deleted, site.v1.js removed,
       FR-001 + WF-01 amended
-- [ ] T015 SEO/AEO pass (owner directive 2026-10-11): self-canonical,
+- [x] T015 SEO/AEO pass (owner directive 2026-10-11): self-canonical,
       Twitter cards, JSON-LD @graph (Organization/WebSite/WebPage/
       FAQPage matching the visible Quick answers), sitemap lastmod,
       robots AI-crawler allowances, expanded llms.txt; stylesheet
@@ -60,3 +60,8 @@
       Microsoft Entra as the only IdP
 - [ ] T107 Clean-session SSO sign-in test passes (owner)
 - [ ] T108 Only after T107: enforce SSO-only for the domain
+      AEO result: 96/100 (check.aeojs.org, 2026-10-11) — AI Access,
+      Content Structure, Schema, Citability all 20/20; sole flag
+      'Description length' does not match any measured field (all
+      six description fields on both pages count 91–198 chars,
+      inside the 50–200 range; likely scores the www redirect host)
