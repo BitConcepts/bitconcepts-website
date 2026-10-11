@@ -50,7 +50,7 @@
 
 # Spec 002 (SSO) — placeholder tasks
 
-- [ ] T016 Research restructure (owner directive via Glossa chat
+- [x] T016 Research restructure (owner directive via Glossa chat
       2026-10-11): /research/ becomes the Research home (programs
       index, export sha256 a6725e76…); the Indus tracker moves to
       /research/indus-script/ (rebased export sha256 6d4bb756…,
