@@ -32,16 +32,8 @@ body {
   padding: 44px 36px 32px;
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
 }
-.logo { width: 148px; height: 148px; border-radius: 20px; }
-.wordmark {
-  margin: 14px 0 0;
-  font-size: 1.35rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text);
-}
-h1 { margin: 18px 0 10px; font-size: 2rem; line-height: 1.2; font-weight: 650; }
+.logo-lockup { width: 320px; max-width: 82%; height: auto; }
+h1 { margin: 22px 0 10px; font-size: 2rem; line-height: 1.2; font-weight: 650; }
 .lede { margin: 0 auto; max-width: 46ch; color: var(--muted); font-size: 1.06rem; line-height: 1.55; }
 .lede strong { color: var(--text); }
 .actions { margin: 26px 0 8px; }
@@ -65,7 +57,7 @@ hr { border: none; border-top: 1px solid var(--line); margin: 28px 0 18px; }
 .foot a { color: #7e8a94; }
 @media (max-width: 480px) {
   .card { padding: 32px 20px 24px; }
-  .logo { width: 112px; height: 112px; }
+  .logo-lockup { width: 250px; }
   h1 { font-size: 1.55rem; }
   .btn { display: block; width: 100%; }
 }
