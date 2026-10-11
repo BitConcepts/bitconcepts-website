@@ -7,6 +7,10 @@
 - [x] T004 Build interstitial + research holding page on `staging`
 - [x] T005 Create GitHub repo BitConcepts/bitconcepts-website, push `main` + `staging` — done 2026-10-11, repo public, main a62e6ae
 - [x] T006 Local visual verification (Playwright, desktop + mobile)
+- [x] T006b Research tracker integrated at /research/ — Glossa-Lab final
+      judged build verbatim (audit passed; sha256 04ccc13b…; local
+      Playwright re-verified desktop+mobile, 0 console errors, 0px
+      mobile overflow); staging synced with noindex guards re-asserted
 - [ ] T007 Owner gate: Cloudflare dashboard sign-in — identify the
       account holding the bitconcepts.tech zone, record account/zone IDs
 - [ ] T008 Mint "BitConcepts Ops" API token (owner session), store
