@@ -17,15 +17,19 @@ pages linked except research and the destination:
 |               Consulting has a new home.                 |
 |                                                          |
 |   BitConcepts' consulting and engineering services are   |
-|   now delivered through Axiovex Systems. You're being    |
-|   redirected there…                                      |
+|   now delivered through Axiovex Systems.                 |
 |                                                          |
 |         [ Continue to Axiovex Systems → ]                |
-|                                                          |
-|   Redirecting in 5 seconds.  Stay on this page           |
 |   ----------------------------------------------------   |
 |   Here for the research? BitConcepts research            |
 |   continues here: bitconcepts.tech/research/             |
+|                                                          |
+|   QUICK ANSWERS                                          |
+|   Where did BitConcepts consulting go? …Axiovex Systems. |
+|   What does BitConcepts do now? …Indus decipherment      |
+|   research program (Glossa-Lab).                         |
+|   Where is the BitConcepts research? …tracker + Zenodo   |
+|   + OSF links.                                           |
 |                                                          |
 |   BitConcepts, LLC · tpierson@bitconcepts.tech           |
 +----------------------------------------------------------+
@@ -33,10 +37,12 @@ pages linked except research and the destination:
 
 - Branding: the BitConcepts mark (blue circuit "B", sampled blue
   #03a1d0) on charcoal — never Axiovex branding on this page.
-- Behavior: JS countdown 5s → axiovexsystems.com (location.replace);
-  noscript fallback meta-refresh at 8s; "Stay on this page" cancels
-  the countdown; the research link is a normal navigation (never
-  redirected).
+- Behavior (AMENDED 2026-10-11, owner directive): **no auto-redirect**
+  — the 5s JS countdown and 8s noscript meta-refresh are removed so
+  visitors can reach /research/ at their own pace. The Continue
+  button is the consulting route; the Quick answers block states the
+  consulting move, the research program, and where the research
+  lives (mirrored in the page's FAQPage JSON-LD).
 - Mobile (≤480px): card padding tightens, logo 112px, button full width.
 
 ## WF-02 — Research tracker `/research/`

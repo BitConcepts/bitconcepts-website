@@ -37,6 +37,16 @@
       MX/TXT/SRV records identical), FR-003 catch-all 301 rule live,
       curl path matrix verified (site paths 200, all other paths
       301 → axiovexsystems.com, www→apex preserved)
+- [x] T014 Homepage auto-redirect REMOVED (owner directive
+      2026-10-11, "so folks can go to the research page"): countdown
+      JS + noscript meta-refresh deleted, site.v1.js removed,
+      FR-001 + WF-01 amended
+- [ ] T015 SEO/AEO pass (owner directive 2026-10-11): self-canonical,
+      Twitter cards, JSON-LD @graph (Organization/WebSite/WebPage/
+      FAQPage matching the visible Quick answers), sitemap lastmod,
+      robots AI-crawler allowances, expanded llms.txt; stylesheet
+      bumped to styles.v3.css (FR-003 rule exception updated to
+      match); AEO scan before/after
 
 # Spec 002 (SSO) — placeholder tasks
 

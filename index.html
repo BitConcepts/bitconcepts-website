@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BitConcepts | Consulting has moved to Axiovex Systems</title>
   <meta name="description" content="BitConcepts' consulting and engineering services are now delivered through Axiovex Systems. BitConcepts research continues at bitconcepts.tech/research/.">
-  <link rel="canonical" href="https://axiovexsystems.com/">
+  <link rel="canonical" href="https://bitconcepts.tech/">
   <meta name="robots" content="index, follow">
+  <meta name="author" content="BitConcepts, LLC">
   <meta name="theme-color" content="#1a1d21">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="BitConcepts">
@@ -16,25 +17,69 @@
   <meta property="og:image" content="https://bitconcepts.tech/assets/og-card.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BitConcepts | Consulting has moved to Axiovex Systems">
+  <meta name="twitter:description" content="BitConcepts' consulting and engineering services are now delivered through Axiovex Systems. BitConcepts research continues at bitconcepts.tech/research/.">
+  <meta name="twitter:image" content="https://bitconcepts.tech/assets/og-card.png">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.v2.css">
-  <!-- Fallback if JavaScript is disabled: redirect after 8 seconds -->
-  <noscript><meta http-equiv="refresh" content="8; url=https://axiovexsystems.com/"></noscript>
+  <link rel="stylesheet" href="styles.v3.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "BitConcepts",
-    "legalName": "BitConcepts, LLC",
-    "url": "https://bitconcepts.tech/",
-    "logo": "https://bitconcepts.tech/assets/bitconcepts-mark-512.png",
-    "email": "tpierson@bitconcepts.tech",
-    "sameAs": [
-      "https://github.com/BitConcepts",
-      "https://axiovexsystems.com/"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://bitconcepts.tech/#org",
+        "name": "BitConcepts",
+        "legalName": "BitConcepts, LLC",
+        "url": "https://bitconcepts.tech/",
+        "logo": "https://bitconcepts.tech/assets/bitconcepts-mark-512.png",
+        "email": "tpierson@bitconcepts.tech",
+        "description": "BitConcepts, LLC is a Michigan engineering company. Its consulting and engineering services are now delivered through Axiovex Systems; BitConcepts owns and runs the Indus decipherment research program (Glossa-Lab), whose public record is the research tracker at bitconcepts.tech/research/.",
+        "sameAs": [
+          "https://github.com/BitConcepts",
+          "https://axiovexsystems.com/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bitconcepts.tech/#site",
+        "url": "https://bitconcepts.tech/",
+        "name": "BitConcepts",
+        "publisher": { "@id": "https://bitconcepts.tech/#org" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://bitconcepts.tech/#page",
+        "url": "https://bitconcepts.tech/",
+        "name": "BitConcepts | Consulting has moved to Axiovex Systems",
+        "isPartOf": { "@id": "https://bitconcepts.tech/#site" },
+        "about": { "@id": "https://bitconcepts.tech/#org" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://bitconcepts.tech/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where did BitConcepts consulting go?",
+            "acceptedAnswer": { "@type": "Answer", "text": "All BitConcepts consulting and engineering services are now delivered through Axiovex Systems (axiovexsystems.com)." }
+          },
+          {
+            "@type": "Question",
+            "name": "What does BitConcepts do now?",
+            "acceptedAnswer": { "@type": "Answer", "text": "BitConcepts owns and runs the Indus decipherment research program (Glossa-Lab), which tests claims about the Indus script one by one against pre-registered criteria. The script is not deciphered; the program publishes what survives testing and what fails." }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is the BitConcepts research?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The public record is the Indus Program Tracker at bitconcepts.tech/research/, with releases archived on Zenodo (latest: v4.10.0, DOI 10.5281/zenodo.23298334) and the project record on OSF." }
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -44,18 +89,31 @@
     <img src="assets/bitconcepts-logo-horizontal.svg" alt="BitConcepts" class="logo-lockup" width="700" height="256">
     <h1>Consulting has a new home.</h1>
     <p class="lede">BitConcepts&rsquo; consulting and engineering services are
-      now delivered through <strong>Axiovex Systems</strong>. You&rsquo;re being
-      redirected there&hellip;</p>
+      now delivered through <strong>Axiovex Systems</strong>.</p>
     <p class="actions">
       <a class="btn" href="https://axiovexsystems.com/">Continue to Axiovex Systems &rarr;</a>
     </p>
-    <p class="countdown" id="countdown" aria-live="polite">Redirecting in <span id="seconds">5</span> seconds.
-      <a href="#" id="stay">Stay on this page</a></p>
     <hr>
     <p class="research">Here for the research? BitConcepts research continues here:
       <a href="/research/">bitconcepts.tech/research/</a></p>
+    <section class="qa" aria-label="Quick answers">
+      <h2>Quick answers</h2>
+      <h3>Where did BitConcepts consulting go?</h3>
+      <p>All BitConcepts consulting and engineering services are now delivered
+        through <a href="https://axiovexsystems.com/">Axiovex Systems</a>.</p>
+      <h3>What does BitConcepts do now?</h3>
+      <p>BitConcepts owns and runs the Indus decipherment research program
+        (Glossa-Lab), which tests claims about the Indus script one by one
+        against pre-registered criteria. The script is not deciphered; the
+        program publishes what survives testing and what fails.</p>
+      <h3>Where is the BitConcepts research?</h3>
+      <p>The public record is the <a href="/research/">Indus Program Tracker</a>,
+        with releases archived on
+        <a href="https://doi.org/10.5281/zenodo.23298334">Zenodo</a> (latest:
+        v4.10.0) and the project record on
+        <a href="https://osf.io/ybd65">OSF</a>.</p>
+    </section>
     <p class="foot">BitConcepts, LLC &middot; <a href="mailto:tpierson@bitconcepts.tech">tpierson@bitconcepts.tech</a></p>
   </main>
-  <script src="site.v1.js"></script>
 </body>
 </html>

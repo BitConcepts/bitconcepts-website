@@ -1,4 +1,4 @@
-/* BitConcepts redirect site — styles v1
+/* BitConcepts redirect site — styles v3
    Palette sampled from the BitConcepts mark: circuit blue #03a1d0
    on charcoal (#404040 in the logo; deepened here to #1a1d21). */
 :root {
@@ -48,8 +48,6 @@ h1 { margin: 22px 0 10px; font-size: 2rem; line-height: 1.2; font-weight: 650; }
   border-radius: 10px;
 }
 .btn:hover, .btn:focus { background: var(--blue-bright); color: #06222c; }
-.countdown { color: var(--muted); font-size: 0.92rem; margin: 10px 0 0; }
-.countdown a { color: var(--blue-bright); }
 hr { border: none; border-top: 1px solid var(--line); margin: 28px 0 18px; }
 .research { color: var(--muted); font-size: 0.98rem; line-height: 1.5; margin: 0; }
 .research a { color: var(--blue-bright); }
@@ -61,3 +59,8 @@ hr { border: none; border-top: 1px solid var(--line); margin: 28px 0 18px; }
   h1 { font-size: 1.55rem; }
   .btn { display: block; width: 100%; }
 }
+.qa { text-align: left; margin: 26px auto 0; max-width: 52ch; }
+.qa h2 { font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue-bright); margin: 0 0 12px; text-align: center; }
+.qa h3 { font-size: 0.98rem; margin: 16px 0 4px; font-weight: 600; }
+.qa p { color: var(--muted); font-size: 0.94rem; line-height: 1.55; margin: 0; }
+.qa a { color: var(--blue-bright); }
