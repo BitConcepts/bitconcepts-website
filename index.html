@@ -29,56 +29,57 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
+    "@type": "Organization",
+    "name": "BitConcepts",
+    "legalName": "BitConcepts, LLC",
+    "url": "https://bitconcepts.tech/",
+    "logo": "https://bitconcepts.tech/assets/bitconcepts-mark-512.png",
+    "email": "tpierson@bitconcepts.tech",
+    "description": "BitConcepts, LLC is a Michigan engineering company. Its consulting and engineering services are now delivered through Axiovex Systems; BitConcepts owns and runs the Indus decipherment research program (Glossa-Lab), whose public record is the research tracker at bitconcepts.tech/research/.",
+    "sameAs": [
+      "https://github.com/BitConcepts",
+      "https://axiovexsystems.com/"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "BitConcepts | Consulting has moved to Axiovex Systems",
+    "url": "https://bitconcepts.tech/",
+    "description": "BitConcepts' consulting and engineering services are now delivered through Axiovex Systems. BitConcepts research continues at bitconcepts.tech/research/.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BitConcepts",
+      "url": "https://bitconcepts.tech/"
+    },
+    "about": {
+      "@type": "Organization",
+      "name": "BitConcepts",
+      "url": "https://bitconcepts.tech/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
       {
-        "@type": "Organization",
-        "@id": "https://bitconcepts.tech/#org",
-        "name": "BitConcepts",
-        "legalName": "BitConcepts, LLC",
-        "url": "https://bitconcepts.tech/",
-        "logo": "https://bitconcepts.tech/assets/bitconcepts-mark-512.png",
-        "email": "tpierson@bitconcepts.tech",
-        "description": "BitConcepts, LLC is a Michigan engineering company. Its consulting and engineering services are now delivered through Axiovex Systems; BitConcepts owns and runs the Indus decipherment research program (Glossa-Lab), whose public record is the research tracker at bitconcepts.tech/research/.",
-        "sameAs": [
-          "https://github.com/BitConcepts",
-          "https://axiovexsystems.com/"
-        ]
+        "@type": "Question",
+        "name": "Where did BitConcepts consulting go?",
+        "acceptedAnswer": { "@type": "Answer", "text": "All BitConcepts consulting and engineering services are now delivered through Axiovex Systems (axiovexsystems.com)." }
       },
       {
-        "@type": "WebSite",
-        "@id": "https://bitconcepts.tech/#site",
-        "url": "https://bitconcepts.tech/",
-        "name": "BitConcepts",
-        "publisher": { "@id": "https://bitconcepts.tech/#org" }
+        "@type": "Question",
+        "name": "What does BitConcepts do now?",
+        "acceptedAnswer": { "@type": "Answer", "text": "BitConcepts owns and runs the Indus decipherment research program (Glossa-Lab), which tests claims about the Indus script one by one against pre-registered criteria. The script is not deciphered; the program publishes what survives testing and what fails." }
       },
       {
-        "@type": "WebPage",
-        "@id": "https://bitconcepts.tech/#page",
-        "url": "https://bitconcepts.tech/",
-        "name": "BitConcepts | Consulting has moved to Axiovex Systems",
-        "isPartOf": { "@id": "https://bitconcepts.tech/#site" },
-        "about": { "@id": "https://bitconcepts.tech/#org" }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://bitconcepts.tech/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Where did BitConcepts consulting go?",
-            "acceptedAnswer": { "@type": "Answer", "text": "All BitConcepts consulting and engineering services are now delivered through Axiovex Systems (axiovexsystems.com)." }
-          },
-          {
-            "@type": "Question",
-            "name": "What does BitConcepts do now?",
-            "acceptedAnswer": { "@type": "Answer", "text": "BitConcepts owns and runs the Indus decipherment research program (Glossa-Lab), which tests claims about the Indus script one by one against pre-registered criteria. The script is not deciphered; the program publishes what survives testing and what fails." }
-          },
-          {
-            "@type": "Question",
-            "name": "Where is the BitConcepts research?",
-            "acceptedAnswer": { "@type": "Answer", "text": "The public record is the Indus Program Tracker at bitconcepts.tech/research/, with releases archived on Zenodo (latest: v4.10.0, DOI 10.5281/zenodo.23298334) and the project record on OSF." }
-          }
-        ]
+        "@type": "Question",
+        "name": "Where is the BitConcepts research?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The public record is the Indus Program Tracker at bitconcepts.tech/research/, with releases archived on Zenodo (latest: v4.10.0, DOI 10.5281/zenodo.23298334) and the project record on OSF." }
       }
     ]
   }
