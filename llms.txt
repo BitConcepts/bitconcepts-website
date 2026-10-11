@@ -17,8 +17,9 @@
   tests claims about the Indus script one by one against
   pre-registered criteria; the script is not deciphered, and negative
   results are published at the same prominence as positive ones.
+- Research home (all programs): https://bitconcepts.tech/research/
 - Public record — Indus Program Tracker:
-  https://bitconcepts.tech/research/
+  https://bitconcepts.tech/research/indus-script/
 - Latest release: Zenodo v4.10.0 (October 11, 2026),
   DOI 10.5281/zenodo.23298334 — https://doi.org/10.5281/zenodo.23298334
 - Project record on OSF: https://osf.io/ybd65

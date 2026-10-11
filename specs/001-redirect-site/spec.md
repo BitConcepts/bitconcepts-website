@@ -24,6 +24,10 @@ pattern used by the Axiovex and Rockeagle sites.
 - FR-002: `/research/` is never redirected. It hosts the research
   tracker supplied by the Glossa-Lab program from its verified
   source pack; until integration it is an honest holding page.
+  **Amendment (owner directive via Glossa-Lab chat, 2026-10-11):
+  /research/ is now a Research home (programs index); the Indus
+  script program tracker lives at /research/indus-script/. Future
+  programs are added as cards on the index + their own subpages.**
 - FR-003: Any other path on bitconcepts.tech (apex and www) 301s to
   https://axiovexsystems.com/ via a Cloudflare redirect rule.
 - FR-004: Hosting is Cloudflare Pages fed by this repo's branches:
