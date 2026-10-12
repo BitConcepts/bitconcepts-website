@@ -75,8 +75,16 @@
       (TXT published via DNS API), connector ENABLED 2026-10-11 after
       the T107 test passed; built-in Cloudflare IdP deleted; both
       Access apps restricted to the Entra IdP only
-- [ ] T107 Clean-session SSO sign-in test passes (owner)
-- [ ] T108 Only after T107: enforce SSO-only for the domain
+- [x] T107 IdP sign-in test PASSED 2026-10-11: end-to-end sign-in
+      through the App Launcher (enabled via API) as
+      tpierson@bitconcepts.tech, identity provider AzureAD, SSO App
+      listed — before enforcement
+- [x] T108 Enforcement + post-checks 2026-10-11: connector enabled,
+      built-in IdP deleted, apps restricted to Entra only; Ops token
+      verified working after enable (API kill-switch). OWNER'S FIRST
+      DASHBOARD SSO SIGN-IN verified in the Access logs:
+      2026-10-12T01:14:56Z, app "SSO App", user
+      tpierson@bitconcepts.tech, connection azureAD, allowed=true
       AEO result: 96/100 (check.aeojs.org, 2026-10-11) — AI Access,
       Content Structure, Schema, Citability all 20/20; sole flag
       'Description length' does not match any measured field (all
