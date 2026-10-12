@@ -60,6 +60,34 @@ pages linked except research and the destination:
   company or project named; ownership line: "Indus decipherment
   research is a BitConcepts program."
 
+## WF-04 — "Related research" section, end of `/research/` (Spec 003)
+
+Closing section after "How a claim earns its verdict" (WF-02's last
+section), before the footer. Existing section furniture only —
+sec-head + one paragraph — no new components, no new styling:
+
+```
++----------------------------------------------------------+
+|  Related research                                        |
+|  ------------------------------------------------------  |
+|  The same evidence-first method — claims specified in    |
+|  advance, tested against what would prove them wrong,    |
+|  verdicts published either way — also runs in a sister   |
+|  research program at [Axiovex Systems], applied to       |
+|  fundamental questions in physics: the nature of time,   |
+|  gravity, and the structure of records.                  |
+|                                                          |
+|  (link: https://axiovexsystems.com/research/)            |
++----------------------------------------------------------+
+|  [footer — unchanged]                                    |
++----------------------------------------------------------+
+```
+
+- One short paragraph, one link. Nothing else is added to the
+  tracker; all WF-02 hard rules still hold for the tracker body.
+- Mobile: single column, unchanged rhythm; the section adds one
+  short block of text only.
+
 ## WF-03 — Everything else (any other path)
 
 No page. A Cloudflare redirect rule sends any other path on
