@@ -1,15 +1,15 @@
 # BitConcepts
 
 > BitConcepts, LLC is a Michigan engineering company. Its consulting and
-> engineering services are now delivered through Axiovex Systems.
+> engineering services are now delivered through ElectroHire.
 > BitConcepts owns and runs the Indus decipherment research program
 > (Glossa-Lab); this site is the program's public front door.
 
 ## Consulting
 
 - All BitConcepts consulting and engineering services are delivered
-  through Axiovex Systems: https://axiovexsystems.com/
-- Contact for consulting: https://axiovexsystems.com/
+  through ElectroHire: https://electrohire.com/
+- Contact for consulting: https://electrohire.com/
 
 ## Research
 

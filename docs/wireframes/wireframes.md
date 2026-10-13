@@ -17,15 +17,15 @@ pages linked except research and the destination:
 |               Consulting has a new home.                 |
 |                                                          |
 |   BitConcepts' consulting and engineering services are   |
-|   now delivered through Axiovex Systems.                 |
+|   now delivered through ElectroHire.                 |
 |                                                          |
-|         [ Continue to Axiovex Systems → ]                |
+|         [ Continue to ElectroHire → ]                |
 |   ----------------------------------------------------   |
 |   Here for the research? BitConcepts research            |
 |   continues here: bitconcepts.tech/research/             |
 |                                                          |
 |   QUICK ANSWERS                                          |
-|   Where did BitConcepts consulting go? …Axiovex Systems. |
+|   Where did BitConcepts consulting go? …ElectroHire. |
 |   What does BitConcepts do now? …Indus decipherment      |
 |   research program (Glossa-Lab).                         |
 |   Where is the BitConcepts research? …tracker + Zenodo   |
@@ -91,5 +91,5 @@ sec-head + one paragraph — no new components, no new styling:
 ## WF-03 — Everything else (any other path)
 
 No page. A Cloudflare redirect rule sends any other path on
-bitconcepts.tech (and www) to https://axiovexsystems.com/ with a
+bitconcepts.tech (and www) to https://electrohire.com/ with a
 301. Mail DNS records are never touched by any rule.
