@@ -67,6 +67,21 @@
       consulting lines, WF-01 wireframe copy. Research cross-links
       to the Axiovex hub unchanged.
 
+- [ ] T018 Website currency update (owner standing rule 2026-10-13;
+      Glossa-Lab handover, owner-approved prep): tracker status text
+      updated to the verified Oct 13 position — claims at the
+      explained stage, none accepted, outreach in progress;
+      cross-compilation board entry resolved (compilations agree on
+      shared objects; disagreement is composition — OSF ZD7UQ)
+      superseding the "93.9% unexplained" framing; new board entry:
+      flagship Dravidian readings NOT SUPPORTED vs no-language
+      baseline (OSF EPHF7, bounded reading); PRED-2026-006 closed
+      unscored + PRED-2026-010 registered (OSF WJEBQ); new Oct 13
+      Latest research article; footer snapshot date updated.
+      Related research section (Spec 003) preserved — surgical edit,
+      NOT a wholesale export overwrite. Staging first; production
+      on owner's site-side approval.
+
 - [x] T101 Inventory done: members tpierson@ + anagaraja@ (both Super
       Admin, accepted); IdPs inventoried (built-in Cloudflare +
       Microsoft Entra ID after T105)
