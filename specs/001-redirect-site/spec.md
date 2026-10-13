@@ -5,7 +5,7 @@ Owner: Tristen Pierson. Decided 2026-10-11.
 ## Purpose
 
 bitconcepts.tech today serves a 404. Give BitConcepts a live web
-presence that (a) sends consulting visitors to Axiovex Systems with
+presence that (a) sends consulting visitors to ElectroHire with
 BitConcepts branding intact, and (b) hosts the BitConcepts research
 tracker at /research/, on the standing GitHub → Cloudflare Pages
 pattern used by the Axiovex and Rockeagle sites.
@@ -14,7 +14,7 @@ pattern used by the Axiovex and Rockeagle sites.
 
 - FR-001: Homepage `/` is a BitConcepts-branded interstitial per
   wireframe WF-01 (approved 2026-10-11): Continue button to
-  https://axiovexsystems.com/, 5-second auto-redirect (JS, with an
+  https://electrohire.com/, 5-second auto-redirect (JS, with an
   8-second noscript meta-refresh fallback), cancellable via
   "Stay on this page".
   **Amendment (owner directive, 2026-10-11): the auto-redirect is
@@ -29,7 +29,14 @@ pattern used by the Axiovex and Rockeagle sites.
   script program tracker lives at /research/indus-script/. Future
   programs are added as cards on the index + their own subpages.**
 - FR-003: Any other path on bitconcepts.tech (apex and www) 301s to
-  https://axiovexsystems.com/ via a Cloudflare redirect rule.
+  https://electrohire.com/ via a Cloudflare redirect rule.
+  **Amendment (owner directive, 2026-10-13): the consulting
+  destination changed from Axiovex Systems to ElectroHire —
+  ElectroHire is the suitable home for BitConcepts consulting;
+  Axiovex does different consulting. Applies to the FR-003 rule,
+  the FR-001 Continue button, and all consulting copy on the
+  homepage and llms.txt. The research cross-links to the Axiovex
+  research hub are NOT part of this change and stay.**
 - FR-004: Hosting is Cloudflare Pages fed by this repo's branches:
   `staging` → staging.bitconcepts.tech, `main` → apex + www.
   No build command; Pages serves the repo root.

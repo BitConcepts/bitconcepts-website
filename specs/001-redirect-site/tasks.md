@@ -57,6 +57,16 @@
       canonical/OG/JSON-LD rebased, breadcrumb added). Sitemap,
       llms.txt, homepage FAQ/JSON-LD links updated to the subpage.
 
+- [ ] T017 Consulting destination change (owner directive
+      2026-10-13): Axiovex Systems → ElectroHire everywhere the
+      redirect applies — FR-003 rule retargeted to
+      https://electrohire.com/ (rule 1090d7c6…, entrypoint PUT;
+      Ops token needed a zone policy with Zone Read + Dynamic URL
+      Redirects Read/Write before the ruleset API would answer),
+      homepage Continue button/copy/JSON-LD/FAQ, llms.txt
+      consulting lines, WF-01 wireframe copy. Research cross-links
+      to the Axiovex hub unchanged.
+
 - [x] T101 Inventory done: members tpierson@ + anagaraja@ (both Super
       Admin, accepted); IdPs inventoried (built-in Cloudflare +
       Microsoft Entra ID after T105)
