@@ -67,7 +67,7 @@
       consulting lines, WF-01 wireframe copy. Research cross-links
       to the Axiovex hub unchanged.
 
-- [ ] T018 Website currency update (owner standing rule 2026-10-13;
+- [x] T018 Website currency update (owner standing rule 2026-10-13;
       Glossa-Lab handover, owner-approved prep): tracker status text
       updated to the verified Oct 13 position — claims at the
       explained stage, none accepted, outreach in progress;
