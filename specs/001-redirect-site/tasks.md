@@ -100,7 +100,7 @@
       margins; route forward = period-assignment act). Related
       research preserved. Staging first, owner approval to promote.
 
-- [ ] T020 Correction + update (Glossa-Lab handover 2026-10-20,
+- [x] T020 Correction + update (Glossa-Lab handover 2026-10-20,
       post-promotion): (1) CISI census corrected — Harappa 1,510 →
       1,604 (510 old excavations + 1,094 HARP seasons); the error
       was in the handover text, not the rendering. (2) Standing
