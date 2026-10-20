@@ -111,7 +111,7 @@
       lineage, NOT independent, candidacies close, 003 stays
       pending; both "not yet assessed" sentences replaced.
 
-- [ ] T021 PRED-2026-011 scored (Glossa-Lab handover 2026-10-20):
+- [x] T021 PRED-2026-011 scored (Glossa-Lab handover 2026-10-20):
       predictions note updated — 011 CONFIRMED under Spec 036
       (Phase-400) on the withheld Harappa texts: P217 start rate
       0.8739 (104/119), P324 0.6111 (473/774), registered bar 0.40
