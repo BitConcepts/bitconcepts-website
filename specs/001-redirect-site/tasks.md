@@ -82,6 +82,24 @@
       NOT a wholesale export overwrite. Staging first; production
       on owner's site-side approval.
 
+- [ ] T019 Website currency update #2 (Glossa-Lab handover
+      2026-10-20; program main 5e7f3cdb): record date Oct 20;
+      Latest research gains the Oct 20 (Spec 035 / PRED-2026-010
+      step-0 closure) and Oct 19 (Spec 033 Dravidian rerun)
+      articles verbatim from a fresh artifact export; predictions
+      note rewritten (010 closed unscored at opening checks —
+      P000 unmappable, withheld data never opened; 011 registered,
+      screened signs P217/P324; 003 candidate datasets flagged);
+      releases point to Zenodo v5.0.0 (DOI 10.5281/zenodo.23351365,
+      Oct 13) in Study papers, the releases array, homepage FAQ,
+      and llms.txt (dated article texts untouched); CISI front
+      updated (Vol 3.1 Basic data received Oct 14, intake done —
+      2,123 records, no transcriptions, cannot score predictions);
+      Spec 027 fronts updated (gazetteer built, period fields
+      empty; Spec 030 NOT-YET-TESTABLE; Spec 031 Q7 closed at
+      margins; route forward = period-assignment act). Related
+      research preserved. Staging first, owner approval to promote.
+
 - [x] T101 Inventory done: members tpierson@ + anagaraja@ (both Super
       Admin, accepted); IdPs inventoried (built-in Cloudflare +
       Microsoft Entra ID after T105)
