@@ -111,6 +111,16 @@
       lineage, NOT independent, candidacies close, 003 stays
       pending; both "not yet assessed" sentences replaced.
 
+- [x] T021 PRED-2026-011 scored (Glossa-Lab handover 2026-10-20):
+      predictions note updated — 011 CONFIRMED under Spec 036
+      (Phase-400) on the withheld Harappa texts: P217 start rate
+      0.8739 (104/119), P324 0.6111 (473/774), registered bar 0.40
+      each, both required, independent recount in exact agreement.
+      Limits stated with the claim: two signs only, P000 untested,
+      cleanliness = training-pool exclusion not analyst blindness.
+      Contract OSF GJEN4; registration T6WHQ unchanged. Dated
+      article texts untouched.
+
 - [x] T101 Inventory done: members tpierson@ + anagaraja@ (both Super
       Admin, accepted); IdPs inventoried (built-in Cloudflare +
       Microsoft Entra ID after T105)
