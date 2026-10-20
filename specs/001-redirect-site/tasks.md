@@ -100,6 +100,17 @@
       margins; route forward = period-assignment act). Related
       research preserved. Staging first, owner approval to promote.
 
+- [ ] T020 Correction + update (Glossa-Lab handover 2026-10-20,
+      post-promotion): (1) CISI census corrected — Harappa 1,510 →
+      1,604 (510 old excavations + 1,094 HARP seasons); the error
+      was in the handover text, not the rendering. (2) Standing
+      release pointers v5.0.0 → v5.1.0 (DOI 10.5281/zenodo.23503470,
+      published 2026-10-20) in Study papers, releases array,
+      homepage FAQ, llms.txt; dated texts untouched. (3) PRED-2026-003
+      candidates: provenance assessed Oct 20 — both ICIT/Mahadevan
+      lineage, NOT independent, candidacies close, 003 stays
+      pending; both "not yet assessed" sentences replaced.
+
 - [x] T101 Inventory done: members tpierson@ + anagaraja@ (both Super
       Admin, accepted); IdPs inventoried (built-in Cloudflare +
       Microsoft Entra ID after T105)
