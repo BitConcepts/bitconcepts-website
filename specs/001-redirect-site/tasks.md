@@ -82,7 +82,7 @@
       NOT a wholesale export overwrite. Staging first; production
       on owner's site-side approval.
 
-- [ ] T019 Website currency update #2 (Glossa-Lab handover
+- [x] T019 Website currency update #2 (Glossa-Lab handover
       2026-10-20; program main 5e7f3cdb): record date Oct 20;
       Latest research gains the Oct 20 (Spec 035 / PRED-2026-010
       step-0 closure) and Oct 19 (Spec 033 Dravidian rerun)
