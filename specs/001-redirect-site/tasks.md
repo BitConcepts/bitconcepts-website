@@ -121,7 +121,7 @@
       Contract OSF GJEN4; registration T6WHQ unchanged. Dated
       article texts untouched.
 
-- [ ] T022 Release pointer update (Glossa-Lab handover 2026-10-20):
+- [x] T022 Release pointer update (Glossa-Lab handover 2026-10-20):
       v5.1.0 → v5.2.0 (DOI 10.5281/zenodo.23520218, published
       2026-10-20; carries the PRED-2026-011 CONFIRMED record) in
       Study papers, the releases array, homepage FAQ, and llms.txt.
