@@ -121,6 +121,14 @@
       Contract OSF GJEN4; registration T6WHQ unchanged. Dated
       article texts untouched.
 
+- [x] T022 Release pointer update (Glossa-Lab handover 2026-10-20):
+      v5.1.0 → v5.2.0 (DOI 10.5281/zenodo.23520218, published
+      2026-10-20; carries the PRED-2026-011 CONFIRMED record) in
+      Study papers, the releases array, homepage FAQ, and llms.txt.
+      The research index names no versioned release (concept DOI
+      only) — nothing to move there. Dated texts untouched;
+      Related research preserved.
+
 - [x] T101 Inventory done: members tpierson@ + anagaraja@ (both Super
       Admin, accepted); IdPs inventoried (built-in Cloudflare +
       Microsoft Entra ID after T105)
