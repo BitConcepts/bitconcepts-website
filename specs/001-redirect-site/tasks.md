@@ -129,7 +129,7 @@
       only) — nothing to move there. Dated texts untouched;
       Related research preserved.
 
-- [ ] T023 Preprint v8 pointers (Glossa-Lab handover 2026-10-23,
+- [x] T023 Preprint v8 pointers (Glossa-Lab handover 2026-10-23,
       papers + website currency rule): the Indus preprint v8 was
       published on Zenodo 2026-10-23, DOI 10.5281/zenodo.23604590
       (record zenodo.org/records/23604590; concept DOI 20379070
