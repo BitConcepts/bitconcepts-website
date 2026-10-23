@@ -20,8 +20,8 @@
 - Research home (all programs): https://bitconcepts.tech/research/
 - Public record — Indus Program Tracker:
   https://bitconcepts.tech/research/indus-script/
-- Latest release: Zenodo v5.2.0 (October 20, 2026),
-  DOI 10.5281/zenodo.23520218 — https://doi.org/10.5281/zenodo.23520218
+- Latest release: Zenodo v8 preprint (October 23, 2026),
+  DOI 10.5281/zenodo.23604590 — https://doi.org/10.5281/zenodo.23604590
 - Project record on OSF: https://osf.io/ybd65
 - Related research — the Axiovex Systems research hub (sister
   program; the same evidence-first method applied to fundamental
