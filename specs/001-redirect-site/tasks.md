@@ -129,6 +129,17 @@
       only) — nothing to move there. Dated texts untouched;
       Related research preserved.
 
+- [ ] T023 Preprint v8 pointers (Glossa-Lab handover 2026-10-23,
+      papers + website currency rule): the Indus preprint v8 was
+      published on Zenodo 2026-10-23, DOI 10.5281/zenodo.23604590
+      (record zenodo.org/records/23604590; concept DOI 20379070
+      unchanged), superseding v5.2.0 as the latest version.
+      Pointers moved in Study papers, the releases array (new top
+      entry), homepage FAQ, and llms.txt. The research index cites
+      only the concept DOI — nothing to move. No summary text
+      added: v8's red-team pass is not presented as establishing
+      the decipherment, per the handover's accuracy bound.
+
 - [x] T101 Inventory done: members tpierson@ + anagaraja@ (both Super
       Admin, accepted); IdPs inventoried (built-in Cloudflare +
       Microsoft Entra ID after T105)
