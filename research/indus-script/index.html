@@ -187,6 +187,12 @@
       .covbar { height: 9px; background: var(--surface-2); border: 1px solid var(--line-strong); margin: 10px 0 8px; border-radius: 3px; overflow: hidden; }
       .covbar span { display: block; height: 100%; background: var(--blue); }
 
+      .ledger-cap { font-weight: 700; font-size: 15.5px; margin: 34px 0 0; }
+      .ledger.five { grid-template-columns: repeat(5, 1fr); margin-top: 12px; }
+      #status h3 { font-size: 18.5px; margin: 28px 0 8px; line-height: 1.3; }
+      #status p { color: var(--ink-2); max-width: 74ch; margin: 0 0 12px; }
+      #status p strong { color: var(--ink); }
+
       /* ---------- sections ---------- */
       section { padding: 40px 0 8px; }
       .sec-head { display: flex; align-items: baseline; gap: 16px; border-bottom: 2px solid var(--line-strong); padding-bottom: 10px; margin-bottom: 20px; }
@@ -371,6 +377,10 @@
         .hero-grid { grid-template-columns: 1fr; gap: 24px; }
         .ledger { grid-template-columns: 1fr 1fr; }
         .ledger .cell:nth-child(2) { border-right: none; }
+        .ledger.five { grid-template-columns: 1fr 1fr; }
+        .ledger.five .cell:nth-child(4) { border-right: none; }
+        .ledger.five .cell:nth-child(3), .ledger.five .cell:nth-child(4) { border-bottom: 1px solid var(--line); }
+        .ledger.five .cell:nth-child(5) { grid-column: 1 / -1; border-right: none; }
         .ledger .cell:nth-child(1), .ledger .cell:nth-child(2) { border-bottom: 1px solid var(--line); }
         .board { grid-template-columns: 1fr; }
         .pred-grid { grid-template-columns: 1fr; }
@@ -429,7 +439,7 @@
             <span class="own-sub">Research</span>
           </span>
         </span>
-        <span class="asof">Program record as of October 20, 2026</span>
+        <span class="asof">Program record as of October 28, 2026</span>
         <nav aria-label="Program records">
           <a href="https://github.com/BitConcepts/glossa-lab" target="_blank" rel="noopener">GitHub repository</a>
           <a href="https://doi.org/10.5281/zenodo.20379070" target="_blank" rel="noopener">Zenodo archive</a>
@@ -446,12 +456,7 @@
             <h1>The Indus script, tested claim by claim.</h1>
             <div class="status-line" role="note">
               <span class="dot" aria-hidden="true"></span>
-              <p><strong>Status: not deciphered.</strong> The Indus script remains undeciphered. This program holds a well-audited, <strong>unproven</strong> hypothesis — and publishes the evidence for and against it at the same size.</p>
-            </div>
-            <p>The program&rsquo;s claims stand at the <strong>explained</strong> stage: the reasoning behind each one is written out and on record. None is <strong>accepted</strong> — that stage requires independent scholars to take the claims up, and that outreach is in progress.</p>
-            <p class="lede">Glossa-Lab tests proposed readings of the Indus sign system the way a result earns trust anywhere else: every study is specified before it runs, frozen before data is touched, and closed with a verdict — including the verdicts that go against the program.</p>
-            <div class="falsified">
-              <strong>Falsified and quarantined:</strong> an earlier statistical-association (SA) method for assigning readings failed the program's own held-out test — <span class="mono">0.000 accuracy, 0 of 115</span> — and was withdrawn. No current claim rests on it; 44 anchors still await independent, non-SA validation.
+              <p><strong>Status: not deciphered.</strong> The Indus script is <strong>not deciphered</strong>. No sign has a proven reading, no Harappan language has been identified, and nothing on this page claims otherwise. What this program holds is a set of proposed readings and structural findings, published as a preprint, tested under rules frozen in advance, and — as the audit reported at the top of this page shows — graded more strictly by the program&rsquo;s own review than they were when first announced.</p>
             </div>
           </div>
           <figure class="seal">
@@ -460,51 +465,74 @@
           </figure>
         </div>
 
-        <div class="ledger" aria-label="Program numbers">
+        <p class="ledger-cap">Program numbers, as corrected October 26, 2026:</p>
+        <div class="ledger five" aria-label="Program numbers">
           <div class="cell">
             <p class="num">287</p>
-            <p class="lbl">Sign-value anchors</p>
-            <div class="stackbar" role="img" aria-label="Anchor confidence: 166 high, 5 medium, 3 low, 113 candidate, of 287 total">
-              <span style="width:57.84%;background:var(--supported)"></span>
-              <span style="width:1.74%;background:var(--inconclusive)"></span>
-              <span style="width:1.05%;background:var(--contradicted)"></span>
-              <span style="width:39.37%;background:var(--line-strong)"></span>
-            </div>
-            <div class="stack-legend">
-              <span><i style="background:var(--supported)"></i>166 HIGH</span>
-              <span><i style="background:var(--inconclusive)"></i>5 MED</span>
-              <span><i style="background:var(--contradicted)"></i>3 LOW</span>
-              <span><i style="background:var(--line-strong)"></i>113 CANDIDATE</span>
-            </div>
+            <p class="lbl">Proposed readings (anchors) on record</p>
           </div>
           <div class="cell">
             <p class="num">94</p>
             <p class="lbl">Strict-core readings</p>
-            <p class="sub">Readings supported without the falsified SA method — the part of the hypothesis that stands on independent evidence alone.</p>
+            <p class="sub">The subset whose recorded history never passed through the program&rsquo;s original method, which was falsified in testing and withdrawn. 6 carry independent outside support; 46 rest on internal evidence only; 37 require revalidation; 3 await an expert ruling; 2 have insufficient evidence.</p>
           </div>
           <div class="cell">
             <p class="num">73.68<small>%</small></p>
-            <p class="lbl">Strict corpus coverage</p>
-            <div class="covbar" role="img" aria-label="5,159 of 7,002 tokens covered, 73.68 percent"><span style="width:73.68%"></span></div>
-            <p class="sub"><span class="mono">5,159 of 7,002</span> tokens in the strict corpus layer are covered by those 94 readings.</p>
+            <p class="lbl">Assignment coverage</p>
+            <div class="covbar" role="img" aria-label="5,159 of 7,002 tokens carry a candidate reading from the strict core, 73.68 percent"><span style="width:73.68%"></span></div>
+            <p class="sub"><span class="mono">5,159 of 7,002</span> tokens carry a candidate reading from the strict core. This is <em>assignment coverage</em> — it counts tokens whose sign has a proposed reading. It is not accuracy, not validation, and not a measure of progress toward decipherment.</p>
           </div>
           <div class="cell">
-            <p class="num">0<small> / 115</small></p>
-            <p class="lbl">Falsified method, held-out test</p>
-            <p class="sub">The SA method's score on data it had never seen. It was quarantined on this result, and every claim that depended on it was re-based or dropped.</p>
+            <p class="num">44</p>
+            <p class="lbl">Pending readings</p>
+            <p class="sub">Further readings are pending. They have not been scored by a validated instrument, and the October audit gave them no new weight.</p>
+          </div>
+          <div class="cell">
+            <p class="num" style="font-size:25px;padding-top:9px">PRED-2026</p>
+            <p class="lbl">Registered predictions</p>
+            <p class="sub">The program&rsquo;s registered predictions remain <strong>pending</strong>, waiting on a fully independent corpus. Pending means unplayed: not lost, not won.</p>
           </div>
         </div>
       </div>
     </header>
 
     <main class="wrap">
+      <!-- ================= CURRENT STATUS ================= -->
+      <section id="status" aria-labelledby="status-h">
+        <div class="sec-head">
+          <h2 id="status-h">Current status — the October 26, 2026 audit of our own evidence</h2>
+        </div>
+        <p class="sec-intro"><em>This section supersedes the evidential wording in the dated articles below — in particular the October 13 article&rsquo;s statement that the 94 strict-core readings are &ldquo;each supported by evidence independent of the program&rsquo;s original method.&rdquo; That sentence is no longer accurate as written, and this section is the correction. The dated articles themselves are not edited: the program&rsquo;s rule is that history is never rewritten, and corrections are appended, as here.</em></p>
+        <p>In October 2026 the program audited the machinery that had certified its own headline claims — the checkers and comparison tables behind the numbers, not just the numbers. Three of those certifications were broken in ways that guaranteed their answers, and they are withdrawn. A fourth audit re-graded every strict-core reading. What follows is the corrected picture, stated at the strength the record supports.</p>
+        <h3>The 94 strict-core readings, re-graded</h3>
+        <p>Every one of the 94 was audited individually. <strong>6 are independently supported</strong> — each has a recorded line of support from outside the program, from two directions. <strong>46 rest on internal evidence only</strong> — the program&rsquo;s own tests, which can show the model agrees with itself but cannot confirm it against the world. <strong>37 require revalidation</strong> — a load-bearing input to their grading failed, so their grade cannot be trusted until the work is redone; the readings themselves have not been re-examined and are not thereby falsified. <strong>3 are expert-pending</strong> — signs M222, M362, and M398, waiting on a qualified outside ruling. <strong>2 have insufficient evidence</strong> (M367, M048).</p>
+        <p>One result inside the audit deserves its own sentence: the batch of 30 readings once promoted by an early grading battery does not survive as supported at all — 28 require revalidation and 2 are insufficient, because that battery recorded passes by default in 14 cases, and three readings rest wholly on those defaults in the tests that touch the readings themselves.</p>
+        <p><strong>What this means.</strong> The honest headline is no longer &ldquo;94 readings with independent support.&rdquo; It is: 94 candidate readings, of which 6 currently carry independent support, and the rest stand at grades the audit states one by one. <strong>What it does not establish:</strong> that the other 88 readings are wrong. Revalidation is a statement about the grading, not a verdict on the readings — and &ldquo;internal evidence only&rdquo; is a real, if weaker, grade, not a failure.</p>
+        <h3>The sound-pattern check is withdrawn</h3>
+        <p>The program previously reported that its proposed readings showed <strong>zero violations</strong> of the sound rules of the candidate language family. <strong>That claim is withdrawn, and no corrected number replaces it.</strong> The checker that produced the zero deleted the very sounds its rule tests for before it tested them, passed input it could not check at all, and tested only the first sound of each reading while reporting a verdict about the whole reading. Its zero was guaranteed before it ran — it would have reported zero for any readings whatsoever.</p>
+        <p>A corrected checker now exists: it keeps every sound, reports readings it cannot check as <em>uncheckable</em> rather than passed, and labels itself honestly as a first-sounds check, not a full assessment. But no corrected count has been run, and certifying one also requires a linguist&rsquo;s ruling on which period&rsquo;s sound rules the check should enforce. Until both happen, the program makes <strong>no claim</strong> about how many readings violate the sound rules — in either direction.</p>
+        <h3>&ldquo;Signs behave the same across sites&rdquo; is not established</h3>
+        <p>The program previously reported its signs as site-invariant — the same behavior at every site — with figures of 65 of 65 (strict core) and 90 of 90 (full set). <strong>Those figures are withdrawn.</strong> The test behind them could only ever print one of three p-values, printed a wrong one in the decisive range (a true value of 0.0578 came out as 0.0, flipping a verdict), filled in placeholder numbers for signs with too little data, and labeled &ldquo;no difference detected&rdquo; as proof of sameness — which no test can show without a margin set in advance. The denominators also hid the untested remainder: 29 of the 94 strict signs, and 81 of the 171 in the full set, were never tested at all.</p>
+        <p>A corrected test now exists. Re-running the evaluation is blocked on two named inputs: a corpus file the program does not hold in its repository, and a suitable computing environment. Until that work runs, the correct statement is the weaker one: <strong>site invariance is not established.</strong></p>
+        <h3>The &ldquo;independent check&rdquo; against Parpola was not independent</h3>
+        <p>The program previously reported agreement of 81 of 81 compared readings with the published work of Asko Parpola, presented as external validation. <strong>It was not external, and it is withdrawn as validation.</strong> The audit classified all 184 comparisons in the comparison table: <strong>zero are eligible as independent comparisons.</strong> 116 of the &ldquo;Parpola&rdquo; values were copied from the program&rsquo;s own reading table during the table&rsquo;s construction, so the comparison was the program agreeing with itself; the rest were ineligible, unverified, or had already been used while the readings were being built. Of the 81 strict-core comparisons in the old headline, 78 are the program&rsquo;s own copies and 3 are unverified.</p>
+        <p>One register entry that was kept partly on this comparison&rsquo;s support is flagged for individual reassessment (sign M222 — also one of the three expert-pending signs above). The other register entries are unaffected.</p>
+        <p><strong>What this means.</strong> The readings lose a claimed independent confirmation they never actually had. <strong>What it does not establish:</strong> that the readings disagree with Parpola, or that they are wrong — the audit measured the comparison&rsquo;s provenance, not the readings&rsquo; truth. A genuinely independent comparison has not yet been run.</p>
+        <h3>The fish-sign counts, stated separately</h3>
+        <p>An earlier combined figure pooled two different populations into a single count of 0 of 140. Pooling unlike populations is not a valid measurement, and the pooled figure is not used. Stated separately, as they will be from now on: <strong>0 of 113</strong> fish-bearing seals in the corpus show an isolated fish sign, and <strong>0 of 27</strong> in the Gulf catalog. (A separate registered fish-family study is recorded in the releases section below, in the only terms its gate permits.)</p>
+        <h3>Two older figures, labeled as history</h3>
+        <p>Seal coverage of 69.8% (1,165 of 1,670 seals) and a grammar consistency score of 93.2% were computed on the earlier 161-reading set, which has been retired as the headline set. They are kept on the record as history, labeled with the set they describe. The 93.2% was always an internal consistency score — how well the model agrees with itself on that set — not a measured correctness rate for any reading. Neither figure describes the current strict core.</p>
+        <h3>No percentage of the way</h3>
+        <p>The program does not publish a single percentage for &ldquo;how far toward decipherment&rdquo; the work stands. A rung count on the program&rsquo;s own internal ladder is not a measurement of what decipherment requires, and a percentage built from it would claim a precision that does not exist. The honest summary is the one at the top of this page: real structural results, a candidate set of readings graded as above, no independent validation of the whole, no peer review, and the script <strong>not deciphered</strong>.</p>
+      </section>
+
       <!-- ================= VERDICT BOARD ================= -->
       <section id="verdicts" aria-labelledby="verdicts-h">
         <div class="sec-head">
           <h2 id="verdicts-h">Verdict board</h2>
-          <p class="sec-note">Current evidentiary status of selected results, after the Spec 026 framework audit and its reruns (October 2026).</p>
+          <p class="sec-note">Current evidentiary status of selected results, after the Spec 026 framework audit and its reruns (October 2026), and as corrected by the October 26, 2026 evidence audit above.</p>
         </div>
-        <p class="sec-intro">Every closed study ends in one of four verdicts — <strong>SUPPORTED</strong>, <strong>INCONCLUSIVE</strong>, <strong>CONTRADICTED</strong>, or <strong>INVALID</strong> — and negative verdicts are published with the same prominence as positive ones. Three findings below sit outside the four-verdict scale and are labelled as what they are.</p>
+        <p class="sec-intro">Every closed study ends in one of four verdicts — <strong>SUPPORTED</strong>, <strong>INCONCLUSIVE</strong>, <strong>CONTRADICTED</strong>, or <strong>INVALID</strong> — and negative verdicts are published with the same prominence as positive ones. Three findings sit outside the four-verdict scale and are labeled as what they are.</p>
         <div class="filters" role="group" aria-label="Filter verdicts" id="filters"></div>
         <div class="board" id="board"></div>
         <p class="board-empty" id="boardEmpty">No findings carry this verdict.</p>
@@ -538,7 +566,7 @@
           </article>
         </div>
         <p class="pred-note"><strong>Pending means unplayed — not lost, not won.</strong> No qualifying fully independent corpus has been obtained yet, so none of the three tests has run. Data requests to concordance holders are outstanding; acquiring that corpus is the single event these predictions are waiting on.</p>
-        <p class="pred-note"><strong>Series update, October 20, 2026:</strong> PRED-2026-006 closed <strong>unscored</strong> (its data split proved not clean). PRED-2026-010 closed on October 20 at its opening checks — <strong>cannot be run as written, unscored, not refuted</strong>: one of its three trained signs has no counterpart in the cross-site sign map (1 of 3 unmappable, 33% against the registered 20% cap), and its withheld data was never opened. Its successor, PRED-2026-011 — designed with the sign-map screening disclosed up front (trained signs P217, P324) — was registered the same day and <strong>scored on October 20, 2026 under Spec 036: CONFIRMED</strong>. Over the withheld Harappa texts (2,717 rows, 2,621 sequences), both trained signs open texts well above the registered bar of 0.40 — P217 at 0.87 (104 of 119 occurrences at text start) and P324 at 0.61 (473 of 774); both signs were required, 2 of 2, and the counts were verified by an independent recount in exact agreement. The limits travel with the claim: two signs only, not the whole initial-sign class; P000 remains untested (it has no counterpart); and the test's cleanliness rests on verified training-pool exclusion, not analyst blindness. For PRED-2026-003: on October 19 the data watch flagged two candidate multi-site datasets; their provenance was assessed on October 20 and both descend from the same ICIT/Mahadevan lineage as the program's in-hand corpora, so neither is independent and neither can score the prediction — PRED-2026-003 stays pending. Records: PRED-2026-010 contract <a class="mono" href="https://doi.org/10.17605/OSF.IO/QKJ8D" target="_blank" rel="noopener">10.17605/OSF.IO/QKJ8D</a> (registration <a class="mono" href="https://osf.io/wjebq/" target="_blank" rel="noopener">osf.io/wjebq</a>) · PRED-2026-011 <a class="mono" href="https://doi.org/10.17605/OSF.IO/T6WHQ" target="_blank" rel="noopener">10.17605/OSF.IO/T6WHQ</a> (contract <a class="mono" href="https://doi.org/10.17605/OSF.IO/GJEN4" target="_blank" rel="noopener">10.17605/OSF.IO/GJEN4</a>).</p>
+        <p class="pred-note"><strong>Series update, October 20, 2026:</strong> PRED-2026-006 closed <strong>unscored</strong> (its data split proved not clean). PRED-2026-010 closed on October 20 at its opening checks — <strong>cannot be run as written, unscored, not refuted</strong>: one of its three trained signs has no counterpart in the cross-site sign map (1 of 3 unmappable, 33% against the registered 20% cap), and its withheld data was never opened. Its successor, PRED-2026-011 — designed with the sign-map screening disclosed up front (trained signs P217, P324) — was registered the same day and <strong>scored on October 20, 2026 under Spec 036: CONFIRMED</strong>. Over the withheld Harappa texts (2,717 rows, 2,621 sequences), both trained signs open texts well above the registered bar of 0.40 — P217 at 0.87 (104 of 119 occurrences at text start) and P324 at 0.61 (473 of 774); both signs were required, 2 of 2, and the counts were verified by an independent recount in exact agreement. The limits travel with the claim: two signs only, not the whole initial-sign class; P000 remains untested (it has no counterpart); the test&rsquo;s cleanliness rests on verified training-pool exclusion, not analyst blindness; and the confirmation rests on site withholding, not independence of scholarly lineage — the withheld texts come from the same scholarly tradition as the training material, held back inside the program&rsquo;s own pipeline, so this is a genuine out-of-sample test but not an independent-tradition one. For PRED-2026-003: on October 19 the data watch flagged two candidate multi-site datasets; their provenance was assessed on October 20 and both descend from the same ICIT/Mahadevan lineage as the program's in-hand corpora, so neither is independent and neither can score the prediction — PRED-2026-003 stays pending. Records: PRED-2026-010 contract <a class="mono" href="https://doi.org/10.17605/OSF.IO/QKJ8D" target="_blank" rel="noopener">10.17605/OSF.IO/QKJ8D</a> (registration <a class="mono" href="https://osf.io/wjebq/" target="_blank" rel="noopener">osf.io/wjebq</a>) · PRED-2026-011 <a class="mono" href="https://doi.org/10.17605/OSF.IO/T6WHQ" target="_blank" rel="noopener">10.17605/OSF.IO/T6WHQ</a> (contract <a class="mono" href="https://doi.org/10.17605/OSF.IO/GJEN4" target="_blank" rel="noopener">10.17605/OSF.IO/GJEN4</a>).</p>
       </section>
 
       <!-- ================= FRAMEWORK AUDIT ================= -->
@@ -557,7 +585,7 @@
           <div class="audit-facts">
             <div class="afact">
               <span class="n">75 of 116</span>
-              <p>items now carry a changed evidentiary status in appended historical assessments — upgrades and demotions alike, including results the program had previously reported in its own favour.</p>
+              <p>items now carry a changed evidentiary status in appended historical assessments — upgrades and demotions alike, including results the program had previously reported in its own favor.</p>
             </div>
             <div class="afact">
               <span class="n">Reruns 383–386</span>
@@ -576,6 +604,151 @@
           <h2 id="latest-h">Latest research</h2>
           <p class="sec-note">Articles are added here when a significant finding is confirmed — at most one per day.</p>
         </div>
+        <p class="sec-intro">The audit section above is this page&rsquo;s current-status statement; the articles below are dated records, and where the audit supersedes an article&rsquo;s wording, the audit governs.</p>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">October 28, 2026 · BitConcepts Research</p>
+    <p class="a-title">The scoring instrument failed its validation test.</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <p><strong>The scoring instrument failed its validation test.</strong> The implantation gate passed, so the test was fair — and the instrument then failed to recover the implanted readings at the rates fixed in advance. Under the rule written before the run, that convicts the instrument: it cannot be trusted to score real readings on this corpus background. The validation line that depended on it is closed. The 44 pending readings remain unscored and unvalidated, and no reading&rsquo;s status changes because of this result — a failed instrument is evidence about the instrument, not about the readings.</p>
+    <p>The run&rsquo;s figures: the implantation gate passed. The recovery test passed (batch score <span class="mono">0.6518</span> against the bar of <span class="mono">0.60</span>; <span class="mono">34</span> of the <span class="mono">44</span> implanted readings recovered against the bar of <span class="mono">33</span>). The permutation test passed, and the instrument refused the calibrated false backgrounds it was required to refuse. The baseline-margin test failed: the instrument beat the corpus&rsquo;s own frequency baseline by <span class="mono">+0.0017</span>, against the <span class="mono">+0.05</span> margin fixed in advance — a win too narrow to certify that the instrument measures anything beyond the corpus&rsquo;s summary of itself.</p>
+    <p>On October 28, 2026, the program&rsquo;s owner ruled on the standing decision attached to this test (OD-1): the baseline-margin test is demoted to a reported diagnostic for any future design — with the safeguard retained that a baseline win under exact implantation remains disqualifying — and this run&rsquo;s verdict stands as recorded: FAILED.</p>
+  </div>
+</details>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">October 26, 2026 · BitConcepts Research</p>
+    <p class="a-title">We audited the machinery that certified our own claims. Three certifications were broken, and the strict core was re-graded.</p>
+    <p class="a-basis">Basis: the repair audit of October 26, 2026 (ten work packages; merged to the program&rsquo;s repository the same day).</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <p><em>What was tested.</em> Not the readings — the certifiers. The sound-pattern checker, the site-comparison test, and the comparison table behind the program&rsquo;s claimed independent validation were each taken apart, and all 94 strict-core readings were re-graded one by one, with the 44 pending readings listed and given no new weight.</p>
+    <p><em>What the result was.</em> The sound checker&rsquo;s zero was guaranteed by construction (it deleted the sounds it tests for); the site test could only print three possible p-values and labeled &ldquo;not detected&rdquo; as &ldquo;the same&rdquo;; the Parpola comparison contained zero eligible independent comparisons in 184. The re-grading: 6 of 94 independently supported, 46 internal-only, 37 requiring revalidation, 3 expert-pending, 2 insufficient. Full figures and reasoning are in the Current status section at the top of this page, which is where this article&rsquo;s detail lives.</p>
+    <p><em>What it means.</em> The program&rsquo;s claims are weaker than its own earlier wording said, and they are now stated at the strength the evidence carries. <em>What it does not establish:</em> that the readings are wrong. Broken certification is a finding about the certificates. The readings stand or fall on work that is now honestly queued: a linguist-reviewed sound check, a corrected site test, a genuinely independent comparison, and expert rulings on three signs.</p>
+  </div>
+</details>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">October 26, 2026 · BitConcepts Research</p>
+    <p class="a-title">The published sign lists witness only about seven in ten of our signs. 158 signs have no witness in either source.</p>
+    <p class="a-basis">Basis: Spec 077 — signary triangulation, executed October 26, 2026.</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <p><em>What was tested.</em> Whether the program&rsquo;s 557-sign list is fully witnessed — sign for sign — by two published sources independent of the list&rsquo;s construction. The bar was frozen before the test ran: at least 502 of 557 signs witnessed.</p>
+    <p><em>What the result was.</em> <strong>NOT SUPPORTED.</strong> <span class="mono">399 of 557</span> signs (<span class="mono">71.63%</span>) are witnessed by the two sources combined. The first source witnesses 399; the second witnesses 42, every one of them already in the first set — the second source added nothing. The test&rsquo;s other product is a <strong>gap list of 158 signs</strong> witnessed in neither source.</p>
+    <p><em>What it means.</em> Nearly three in ten signs on the working list rest, so far, on the program&rsquo;s own materials alone. The gap list is now the concrete agenda for corpus work: those 158 signs are what outside material would most decisively speak to. <em>What it does not establish:</em> that the 158 signs are not real signs. An unwitnessed sign may be a rare sign, a variant the sources fold into another entry, or an error in the working list — this test cannot tell those apart, and the program has not yet designed the follow-up that could.</p>
+    <p><em>Also from this test:</em> the sign cataloged as token 999 was put through a frequency-based attack to find it a published identity; the attack selected a 39-sign candidate set with no way to break the tie. <strong>Token 999 stands with no published identity</strong> — the one documented sign no ruled source identifies.</p>
+  </div>
+</details>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">October 26, 2026 · BitConcepts Research</p>
+    <p class="a-title">A follow-up positional test&rsquo;s descriptive results stand, but the bridge its interpretation needed failed.</p>
+    <p class="a-basis">Basis: Spec 076 — executed October 26, 2026; its earlier pilot was also replayed under a safe-replay harness and reproduced its archived results file byte-identically.</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <p><em>What was tested.</em> Whether a positional pattern found in earlier work survives a stricter follow-up, including a final &ldquo;bridge&rdquo; step connecting the pattern to the interpretation placed on it — with the number of exclusions the bridge could tolerate fixed in advance at no more than 5.</p>
+    <p><em>What the result was.</em> The descriptive results stand: at the middle step, the pattern&rsquo;s residual was <span class="mono">178</span> against a shuffle-null 5th percentile of <span class="mono">395.0</span>, and solo-only signs numbered <span class="mono">13</span> against a null 95th percentile of <span class="mono">5.0</span> (999 shuffles; no shuffle matched the real values on either). But the bridge step recorded <strong>36 exclusions against the bar of 5</strong>. The study&rsquo;s verdict on its own terms: <strong>the assumption set does not hold.</strong></p>
+    <p><em>What it means.</em> The counts are real and stay on the record; the interpretation they were meant to carry does not follow from them. <em>What it does not establish:</em> that the underlying pattern is absent — the descriptive legs measured it. It establishes that this route from pattern to interpretation is closed. One naming correction travels with this study: in older records the word &ldquo;initial&rdquo; means <em>first legible token</em>, and is now named that way wherever it matters.</p>
+  </div>
+</details>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">October 26, 2026 · BitConcepts Research</p>
+    <p class="a-title">A registered test of published distributional claims could not be run: there were almost no claims to test.</p>
+    <p class="a-basis">Basis: Spec 078 — closed October 26, 2026. Registered in advance: OSF DOI <a class="mono" href="https://doi.org/10.17605/OSF.IO/49FGU" target="_blank" rel="noopener">10.17605/OSF.IO/49FGU</a>.</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <p><em>What was tested.</em> Whether the published literature makes checkable claims about how individual signs are distributed — claims a blind coder could extract and the program could then score. The study required at least 25 counted signs carrying such a claim before scoring could begin.</p>
+    <p><em>What the result was.</em> <strong>Closed — the test cannot be administered.</strong> Blind coding found no distributional claims at all in the strict core of sources, and only <strong>7 of 86</strong> counted signs carry any checkable claim, against the floor of 25. There was nothing to score.</p>
+    <p><em>What it means.</em> A whole route to outside confirmation — &ldquo;the literature already says how these signs behave; check us against it&rdquo; — is unavailable, because the literature does not in fact say it in checkable form. <em>What it does not establish:</em> anything about the signs themselves. This is a finding about the published record, and it closes an administrative route, not a question about the script.</p>
+  </div>
+</details>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">October 26, 2026 · BitConcepts Research</p>
+    <p class="a-title">The sky-sign census ran, and its trigger does not fire: the published lists attach no sky identifications to count.</p>
+    <p class="a-basis">Basis: the Spec 071 census act, executed October 26, 2026.</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <p><em>What was tested.</em> A standing trigger: if published sign lists attach celestial identifications (&ldquo;sky signs&rdquo;) to individual signs, a registered test of the sky-sign claim becomes runnable. The census examined the two published lists sign by sign for such identifications.</p>
+    <p><em>What the result was.</em> <strong>The census does not fire the trigger.</strong> The first list attaches no per-sign identifications of the counted kind; the second list&rsquo;s single celestial item — a &ldquo;star&rdquo; gloss for sign 112, taken from Parpola — is recorded as <em>reported, not adopted</em>: that list&rsquo;s own identification for sign 112 is &ldquo;fish.&rdquo; Counted signs: <strong>zero, in both arms.</strong></p>
+    <p><em>What it means.</em> The sky-sign test remains <strong>untested in every outcome</strong> — not supported, not refuted, unrun — and the trigger stays live for any other published list that does attach such identifications. <em>What it does not establish:</em> anything about whether any sign depicts a celestial object. A companion classification built by the program (see the registry entry below) assigns zero signs to a celestial class — a statement about that classification, not about the sky.</p>
+  </div>
+</details>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">October 26, 2026 · BitConcepts Research</p>
+    <p class="a-title">In the Gulf seal catalog, every seal found in Mesopotamia or the Indus is inscribed. The record cannot say whether that is use or cataloging.</p>
+    <p class="a-basis">Basis: Atlas / contact-zone Line 1, catalog leg, executed October 26, 2026, on the published Gulf seal catalog (Laursen 2010; citation Steffen Terp Laursen, <em>Arabian Archaeology and Epigraphy</em> 21(2), November 2010, pp. 96–134, DOI <span class="mono">10.1111/j.1600-0471.2010.00329.x</span>).</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <p><em>What was tested.</em> The catalog&rsquo;s 121 seals (92 Gulf Type, 28 Gulf INDUS, 1 Gulf Linear-Elamite; 29 sites; 93 from Bahrain) were tabulated by find-place and inscription status, and inscribed and uninscribed seals were compared in size.</p>
+    <p><em>What the result was.</em> All 10 Mesopotamia-found seals and all 5 Indus-found seals in the catalog are inscribed, against 7 of 93 from Bahrain. Inscribed seals are larger: median diameter <span class="mono">25.5 mm</span> against <span class="mono">22.0 mm</span> (<span class="mono">p &lt; 0.0001</span>), and the size contrast survives inside Bahrain alone (<span class="mono">27 mm</span> vs <span class="mono">22 mm</span>, <span class="mono">p = 0.0001</span>). The only verbatim western sign sequence in hand is a 7-sign sequence from Janabiyah.</p>
+    <p><em>What it means — and what it does not.</em> The find-place contrast is filed as <strong>undecidable</strong>: it is what genuine use of inscribed seals abroad would look like, and it is also what catalogs produce when they preferentially publish inscribed pieces from foreign excavations. This record cannot separate those, and says so. The size result is a plain catalog fact. A caution from the same work, on contact counts generally: of 135,255 cataloged cuneiform texts, 1,462 mention Meluhha — but the 178 Meluhha tablets split between the Ur III period (54) and a learned tradition a millennium later (53 Neo-Assyrian), so raw counts overstate contemporary contact by roughly a third. The sequence-level leg of this work — comparing actual sign sequences — waits on the CISI Vol. 3 transcription named in Open fronts.</p>
+  </div>
+</details>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">October 26, 2026 · BitConcepts Research</p>
+    <p class="a-title">Four smaller closeouts: a recovery, a failed identification, a missing heading, and a target no setting reached.</p>
+    <p class="a-basis">Basis: Specs 062, 063, 064, 065 — closed in the October 2026 wave. Spec 062 registered in advance: OSF DOI <a class="mono" href="https://doi.org/10.17605/OSF.IO/4M27T" target="_blank" rel="noopener">10.17605/OSF.IO/4M27T</a>.</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <ul>
+      <li><strong>Spec 063 — sign 821 recovered; its reading is not established.</strong> A sign lost from the working materials was recovered by the second of two routes, and a candidate entry was created for it. The candidate is <strong>untested</strong>, and the recovery does not establish the &ldquo;city&rdquo; reading sometimes attached to this sign. Recovering a sign and reading it are different acts; only the first happened.</li>
+      <li><strong>Spec 064 — sign 297: identification FAILED.</strong> A proposed identification was put through its pre-registered final step and did not survive it. The test ran as designed; the identification is closed as failed, not left pending.</li>
+      <li><strong>Spec 065 — the heading is absent from the document.</strong> A records-recovery study completed its first class: one item recovered, one check completed, both ending the same way — the section heading earlier records relied on is <strong>absent from the document itself</strong>. A prior record that treated that heading as real has been retired: it was an artifact of the extraction process, not a feature of the source. What this establishes is narrow and worth stating plainly: a citation the program had repeated pointed at something that was never there.</li>
+      <li><strong>Spec 062 — no target under either scenario.</strong> A test of whether the candidate readings could resolve held-out signs to a pre-set standard (a resolving share of 0.80) ran under both of its scenarios. No tested setting reached the bar; the best result resolved <span class="mono">0.1759</span> (<span class="mono">35 of 199</span>) in one scenario and <span class="mono">0.0804</span> (<span class="mono">16 of 199</span>) in the other. The study is <strong>terminal</strong> — closed, not awaiting a rerun. <em>What it does not establish:</em> that the readings resolve nothing; it establishes that they resolve far less than the program&rsquo;s stated target, under the conditions the test froze.</li>
+    </ul>
+  </div>
+</details>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">October 26, 2026 · BitConcepts Research</p>
+    <p class="a-title">The sign registry was rebuilt: 1,013 rows, and one sign still has no published identity.</p>
+    <p class="a-basis">Basis: Spec 073 — registry audit, October 2026. Registered in advance: OSF DOI <a class="mono" href="https://doi.org/10.17605/OSF.IO/9KH4A" target="_blank" rel="noopener">10.17605/OSF.IO/9KH4A</a>.</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <p>The registry now holds <strong>1,013 rows</strong> — 803 carried from the previous version untouched, 210 published identities added. It keys 556 of the 557 documented signs; the one unkeyed sign is token 999 (see the Spec 077 entry above). The companion classification of 552 signs by what they depict assigns: other 246, unidentified 211, human 43, animal 30, object/goods 22 — and <strong>celestial 0</strong>, consistent with the census finding above: no published identification in the keyed sources makes any sign a sky sign. <em>What this is:</em> bookkeeping made honest — every sign&rsquo;s identity now traces to a named published source or is marked unidentified. <em>What it is not:</em> evidence for or against any reading. A keyed identity is a catalog statement, not a decipherment claim. From the same work: the published frequency table behind the sign list was extracted in full — <strong>417 rows, 405 certain and 12 uncertain</strong> — and its printed totals row (13,372) does not equal the sum of its certain rows (12,325). The record documents that the printed totals were tallied from underlying counts; the two figures are published side by side, not forced to agree.</p>
+  </div>
+</details>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">October 26, 2026 · BitConcepts Research</p>
+    <p class="a-title">Can we even audit whether our sign list splits and merges signs correctly? Two instruments failed, and that line is parked.</p>
+    <p class="a-basis">Basis: the M14 signary-granularity pilots, iterations 1 and 2, October 2026.</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <p><em>What was tested.</em> Every result in this program leans on the sign list — on the assumption that each cataloged sign is one sign. The M14 line tried to audit that assumption directly: plant known splits (one sign&rsquo;s occurrences divided in two) and check whether the instrument can tell the planted halves are really one sign, before trusting it to judge real sign pairs.</p>
+    <p><em>What the result was.</em> Iteration 1 recovered <strong>0 of 20</strong> planted splits, against a bar of 17. Iteration 2, rebuilt on a different representation, recovered <strong>15 of 20</strong> — still short of 17 — and its separation check failed independently: genuinely distinct pairs routinely fall inside the test&rsquo;s equivalence margin (5th percentile <span class="mono">0.153</span> against a margin of <span class="mono">0.20</span>), a verdict the record states as <strong>representation too coarse</strong>. Under the kill criterion written into the design, <strong>the line is parked</strong>: no third iteration will be run.</p>
+    <p><em>What it means.</em> At this corpus size, no distributional instrument the program has built can certify sign boundaries. Every downstream verdict therefore carries the sign list as an <strong>explicitly untested assumption</strong>, and this page says so wherever a verdict leans on it. <em>What it does not establish:</em> that any sign is wrongly split or merged. No real sign pair was judged by either pilot.</p>
+  </div>
+</details>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">October 26, 2026 · BitConcepts Research</p>
+    <p class="a-title">Two lines closed as unavailable, recorded so they are not mistaken for results.</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <ul>
+      <li><strong>The numeral line (S2)</strong> filed its design and then closed its validation pilot as <strong>unavailable</strong>: no independent constraints exist against which a numeral reading could be validated. The line is retained as <strong>exploratory only</strong> and supports no claim on this page or anywhere else.</li>
+      <li><strong>The foundation check</strong>, the program&rsquo;s internal consistency battery, stands as last measured at <strong>39 passed / 0 failed / 9 warnings</strong>. (An older deposited appendix reported a dated run at 40/0/8; that was a true statement about that earlier run.) This is a housekeeping measure of the program&rsquo;s own records, not evidence about the script, and it is published here only so the figure of record is stated once, with its date.</li>
+    </ul>
+  </div>
+</details>
 <details class="article" style="margin-bottom:16px">
   <summary>
     <p class="a-date">October 25, 2026 · BitConcepts Research</p>
@@ -703,6 +876,7 @@
             <p>PRED-2026-006 closed today <strong>unscored</strong>: the split of data it was to be judged on proved not clean, so no fair score could be taken — reporting a number anyway would have been worse than reporting none. Its successor, PRED-2026-010, was registered the same day and is pending.</p>
             <h3>Where the claims stand</h3>
             <p>Nothing here changes the headline. The script is <strong>not deciphered</strong>. Of 287 proposed readings on record, a strict core of 94 stands as a hypothesis, each supported by evidence independent of the program&rsquo;s original method — a method that was falsified in testing and withdrawn — and 44 readings still await independent validation. The program&rsquo;s claims stand at the explained stage: the reasoning is written out and on record. None is accepted; that requires independent scholars to take the claims up, and that outreach is in progress.</p>
+            <p><strong>Correction pointer — the October 26, 2026 audit.</strong> The closing paragraph above states that the 94 strict-core readings are &ldquo;each supported by evidence independent of the program&rsquo;s original method&rdquo; and that &ldquo;44 readings still await independent validation.&rdquo; The October 26, 2026 audit supersedes that wording: 6 of the 94 carry independent support, 46 rest on internal evidence only, 37 require revalidation, 3 are expert-pending, and 2 have insufficient evidence; the 44 were given no new weight. The Current status section at the top of this page is the correction of record for that paragraph.</p>
           </div>
         </details>
         <details class="article">
@@ -731,9 +905,22 @@
             <p>One of the audit's own rerun methods failed its independence control — its confidence interval excluded zero even at a true effect of zero — and was declared INVALID under the framework's rules, then replaced with a corrected method whose results are the ones reported above. A framework that cannot catch its own side cheating is decoration. Ours caught one, in its first week.</p>
             <h3>What this does not change</h3>
             <p>The script is not deciphered, and nothing here moves that line. The strict core remains 94 readings; the 287-anchor set is byte-identical before and after the audit; PRED-2026 remains pending, waiting for an independent corpus. What changed is the quality of the ground the next studies stand on — and the program's newest study, on population movement, culture, and language (Spec 027, frozen today), is the first to be built entirely under the new rules.</p>
+            <p><strong>Flagged tension.</strong> The &ldquo;What stood&rdquo; list above reports that 93.9% of the disagreement between published corpora remains unexplained, while the October 13 article reports the two compilations agreeing almost exactly object by object, the gap being composition. Both are dated records of what was found when; the matched-object study (Spec 034, in the October 25 entry above) is the program&rsquo;s current position on the question.</p>
             <p class="a-links">Links: <a href="https://github.com/BitConcepts/glossa-lab/tree/main/specs/026-rcph-framework-transfer" target="_blank" rel="noopener">Spec 026 record</a> · <a href="https://github.com/BitConcepts/glossa-lab/blob/main/docs/research/indus-population-movement-culture-language.md" target="_blank" rel="noopener">Movement study</a> · <a href="https://doi.org/10.5281/zenodo.20379070" target="_blank" rel="noopener">Zenodo archive</a></p>
           </div>
         </details>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">October 26, 2026 · BitConcepts Research</p>
+    <p class="a-title">One further amended result, recorded with the wave: the reappearance test&rsquo;s amended statement is not supported.</p>
+    <p class="a-basis">Basis: Spec 054, run 2 — amended-statement scoring, October 2026.</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <p>Run 1 of this study closed on a preliminary point: the strict corpus could not be pinned, and that result stands. Run 2 scored an amended version of the statement — whether opening-strong and closing-strong signs reappear where the original published claim predicts. The amended statement is <strong>NOT SUPPORTED</strong>: opening-strong reappearance <span class="mono">0 of 8</span>, closing-strong <span class="mono">0 of 10</span>, pooled overlap <span class="mono">0</span> against a shuffle-null 95th percentile of <span class="mono">1</span>. Two limits are part of the result: run 2 does <strong>not</strong> falsify the original published statement it was modeled on, and it does not move the parent claim. It closes the amended statement, nothing wider.</p>
+  </div>
+</details>
+
       </section>
 
       <!-- ================= OPEN FRONTS ================= -->
@@ -742,47 +929,53 @@
           <h2 id="fronts-h">Open fronts</h2>
           <p class="sec-note">What is actually in motion, and what each line of work is waiting on.</p>
         </div>
-        <h3 style="font-size:16px;margin:0 0 12px">Spec 027 — movement, culture, language <span class="mono" style="font-size:12.5px;color:var(--muted);font-weight:500">adjudicated &amp; frozen October 11, 2026</span></h3>
-        <div class="steps">
-          <div class="step">
-            <p class="st done">● Frozen</p>
-            <h3>Design adjudicated</h3>
-            <p>Scope, governing sign list, and corpus rules settled and frozen before any data is touched.</p>
-          </div>
-          <div class="step">
-            <p class="st done">● Built — with a gap</p>
-            <h3>Stage 0 — gazetteer &amp; chronology spine</h3>
-            <p>The settlement gazetteer and chronology spine are built — but the gazetteer's period fields are empty for every Indus site, and the in-universe link mass is 2 sites / 1 pair. That gap is what the later stages ran into.</p>
-          </div>
-          <div class="step">
-            <p class="st cond">● Closed</p>
-            <h3>Later stages — Specs 030 &amp; 031</h3>
-            <p>The movement study's later stages have run their course. The chronology extension (Spec 030) closed NOT-YET-TESTABLE. Stage 2 (Spec 031, Q7) closed at its margins step: one arm NOT-YET-TESTABLE, one NOT ESTIMABLE.</p>
-          </div>
-          <div class="step">
-            <p class="st next">○ Owner decision</p>
-            <h3>Route forward</h3>
-            <p>A gazetteer period-assignment act — an owner decision — is the recorded next step. It is necessary, but not sufficient on its own.</p>
-          </div>
-        </div>
+                <h3 style="font-size:16px;margin:0 0 12px">The evidence audit&rsquo;s follow-ups — the queue the October 26 audit created</h3>
         <div class="fronts">
           <article class="front">
-            <h3>Five questions registered as not-yet-testable</h3>
-            <p>Spec 027 names five related questions it <strong>cannot yet honestly run</strong>, each with its exact data blocker recorded — including a substrate test that requires at least two human etymologists coding blind. They stay on the register, unrun, until the blocker clears.</p>
+            <h3>Linguist review (pending)</h3>
+            <p>The corrected sound-pattern checker cannot be certified until a linguist rules on which period&rsquo;s sound rules it should enforce. Until then, the program&rsquo;s sound-pattern claim stays withdrawn, with no number in its place.</p>
+          </article>
+          <article class="front">
+            <h3>Expert adjudication of three signs (pending)</h3>
+            <p>Signs M222, M362, and M398 await a qualified outside ruling. M222 also carries the flagged register entry from the withdrawn Parpola comparison.</p>
+          </article>
+          <article class="front">
+            <h3>Site-statistics re-evaluation (blocked on named inputs)</h3>
+            <p>The corrected site test exists. Re-running it needs a corpus file the program does not hold in its repository and a suitable computing environment. Until both exist, site invariance stays <strong>not established</strong>.</p>
+          </article>
+          <article class="front">
+            <h3>A genuinely independent comparison (not yet run)</h3>
+            <p>The withdrawn Parpola comparison has no replacement yet. Building one requires comparator values sourced independently of this program&rsquo;s own tables — the property whose absence the audit found.</p>
+          </article>
+        </div>
+        <div class="fronts" style="margin-top:16px">
+          <article class="front">
+            <h3>The 158 unwitnessed signs</h3>
+            <p>Spec 077 left a gap list of <strong>158 signs</strong> witnessed in neither published source. That list is now the program&rsquo;s concrete corpus agenda. No witness study has yet been designed or frozen for them; this front is open work, honestly at the starting line.</p>
+          </article>
+          <article class="front">
+            <h3>Scoring the 44 pending readings</h3>
+            <p>The 44 pending readings can only be scored by an instrument that has first passed a validation test on the real corpus background. That test has been designed through three amendments and its Monte Carlo checks pass at every barred cell; the run itself is the gate. Until it reports, the 44 remain unscored — and if the instrument fails its validation, they remain unscored, with the reason published.</p>
           </article>
           <article class="front">
             <h3>Independent corpus acquisition</h3>
-            <p>Still <strong>no qualifying fully independent corpus</strong>; concordance and data requests to scholarly holders are outstanding. On October 19 the data watch flagged two candidate multi-site datasets for PRED-2026-003; their provenance was assessed on October 20 and both descend from the same ICIT/Mahadevan lineage as the program's in-hand corpora, so neither is independent and neither can score the prediction. A qualifying corpus is what the PRED-2026 predictions — and the program's strongest possible test — are waiting on.</p>
+            <p>Still <strong>no qualifying fully independent corpus</strong>; concordance and data requests to scholarly holders are outstanding. On October 19 the data watch flagged two candidate multi-site datasets for PRED-2026-003; their provenance was assessed on October 20 and both descend from the same ICIT/Mahadevan lineage as the program&rsquo;s in-hand corpora, so neither is independent and neither can score the prediction. A qualifying corpus is what the PRED-2026 predictions — and the program&rsquo;s strongest possible test — are waiting on.</p>
           </article>
           <article class="front">
             <h3>Corpus of Indus Inscriptions (CISI)</h3>
-            <p>Digital Volumes 1 and 2 are <strong>complete in hand</strong>. The Vol. 3.1 “Basic data” portion (pp. 413–443) was <strong>received October 14</strong> through interlibrary loan, and intake completed October 20: 2,123 catalogue records extracted (519 Mohenjo-daro; 1,604 Harappa — 510 from the old excavations and 1,094 from the HARP seasons), and 1,394 of the 2,101 distinct catalogue numbers are new to the program. Stated plainly: the tables carry no sign transcriptions, so this material cannot score any prediction; what it can support — an object-level concordance, Harappa provenance structure — awaits owner decisions. The Proto-Indica pages are still outstanding from the lending library.</p>
+            <p>Digital Volumes 1 and 2 are <strong>complete in hand</strong>. The Vol. 3.1 &ldquo;Basic data&rdquo; portion (pp. 413–443) was <strong>received October 14</strong> through interlibrary loan, and intake completed October 20: 2,123 catalogue records extracted (519 Mohenjo-daro; 1,604 Harappa — 510 from the old excavations and 1,094 from the HARP seasons), and 1,394 of the 2,101 distinct catalogue numbers are new to the program. Stated plainly: the tables carry no sign transcriptions, so this material cannot score any prediction. What it gates is named work: the contact-zone sequence comparison (see the Atlas entry in Latest research) waits on a transcription build from the Vol. 3 material. The Proto-Indica pages are still outstanding from the lending library.</p>
+          </article>
+          <article class="front">
+            <h3>The sign list itself</h3>
+            <p>The M14 pilots established that the program cannot currently audit its own sign list&rsquo;s granularity. Downstream work proceeds with the sign list as an explicitly untested assumption, stated as such. The remaining route to the boundary question is a different kind of instrument (image-based rather than distributional); whether to commission it is an open program decision, not a running front.</p>
           </article>
           <article class="front">
             <h3>The human-expert route</h3>
-            <p>A paid calibration set (30 objects, human-derived references) and a coder crosswalk package are <strong>ready</strong>; first-wave scholarly outreach was sent October 10, 2026, and replies are awaited. Any future transcription or motif coding will be human-coded under frozen gates — the pilot work showed AI coders cannot supply independent judgment.</p>
+            <p>A paid calibration set (30 objects, human-derived references) and a coder crosswalk package are <strong>ready</strong>; first-wave scholarly outreach was sent October 10, 2026, and replies are awaited. Any future transcription or motif coding will be human-coded under frozen gates — the pilot work showed AI coders cannot supply independent judgment. The expert work the October audit created (the linguist review and the three sign adjudications above) runs on this same route and is its current priority.</p>
           </article>
         </div>
+        <h3 style="font-size:16px;margin:26px 0 12px">Spec 027 — movement, culture, language <span class="mono" style="font-size:12.5px;color:var(--muted);font-weight:500">frozen October 11, 2026</span></h3>
+        <p class="sec-intro" style="margin-bottom:4px">Frozen October 11, 2026. Scope, governing sign list, and corpus rules settled and frozen before any data is touched. The settlement gazetteer and chronology spine are built — but the gazetteer&rsquo;s period fields are empty for every Indus site, and that gap is what the later stages ran into. The movement study&rsquo;s later stages have run their course: the chronology extension closed NOT-YET-TESTABLE; the next stage closed at its margins step, one arm NOT-YET-TESTABLE and one NOT ESTIMABLE. A gazetteer period-assignment act — an owner decision — is the recorded next step; necessary, but not sufficient on its own. Spec 027 also names five related questions it cannot yet honestly run, each with its exact data blocker recorded — including a substrate test that requires at least two human etymologists coding blind. They stay on the register, unrun, until the blockers clear.</p>
       </section>
 
       <!-- ================= RELEASES ================= -->
@@ -915,7 +1108,7 @@
           </figure>
           <div>
             <p><strong>What the program is not claiming:</strong> that any sign has a proven reading, that a Harappan language has been identified, or that the hypothesis is a decipherment. The movement research behind Spec 027 is explicit on the last point — no evidence identifies the Harappan language(s).</p>
-            <p><strong>What it is claiming:</strong> a set of structural results about how the sign system behaves — which sign classes open and close inscriptions, how repertoires differ by site and object type, and how the two published corpora compare — each graded above, with its confounders named.</p>
+            <p><strong>What it is claiming:</strong> a set of structural results about how the sign system behaves — which sign classes open and close inscriptions, how repertoires differ by site and object type, and how the two published corpora compare — each graded above, with its confounders named; and a set of candidate readings graded, after the October 26, 2026 audit, at exactly the strength stated at the top of this page.</p>
           </div>
         </div>
       </section>
@@ -949,7 +1142,7 @@
         <a href="https://github.com/BitConcepts/glossa-lab" target="_blank" rel="noopener">Repository</a>
         <a href="https://doi.org/10.5281/zenodo.20379070" target="_blank" rel="noopener">Zenodo archive</a>
         <a href="https://osf.io/ybd65" target="_blank" rel="noopener">OSF record</a>
-        <span>Snapshot of the program record as of October 20, 2026.</span>
+        <span>Snapshot of the program record as of October 28, 2026.</span>
       </div>
     </footer>
 
