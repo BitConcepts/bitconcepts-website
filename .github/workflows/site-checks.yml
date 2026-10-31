@@ -1,0 +1,15 @@
+name: site-checks
+
+on:
+  push:
+    branches: [main, staging]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run site checks
+        run: python3 .github/scripts/site_checks.py "${{ github.ref_name }}"

@@ -140,6 +140,14 @@
       added: v8's red-team pass is not presented as establishing
       the decipherment, per the handover's accuracy bound.
 
+- [ ] T024 Minimal CI (owner order 2026-10-31, CI-green rule):
+      .github/workflows/site-checks.yml + .github/scripts/
+      site_checks.py — content sanity (pages close, JSON-LD
+      parses, internal links resolve) on every push, plus guard
+      polarity: main must carry NO noindex/Disallow-all/
+      X-Robots-Tag; staging must carry all three. Work is not
+      done until the run is green on the branch it landed on.
+
 - [x] T101 Inventory done: members tpierson@ + anagaraja@ (both Super
       Admin, accepted); IdPs inventoried (built-in Cloudflare +
       Microsoft Entra ID after T105)
