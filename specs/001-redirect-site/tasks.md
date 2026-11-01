@@ -149,6 +149,24 @@
       staging run green on 95a30fe19 (2026-10-31T19:18:21Z);
       main run checked green at promotion.
 
+- [x] T025 Branch archive + prune (owner order 2026-11-01,
+      cleanup protocol): four diverged session branches deleted
+      after their content was verified promoted (cherry-pick
+      flow); tip SHAs recorded here for recovery via GitHub's
+      unreachable-commit retention.
+      · feat/related-research-crosslink @059117fcb97ed78c65d9d9735a3030ed266226d1
+        — Spec 003 cross-link originals (Oct 11); content on main
+        since 8b4912a, spec record at specs/003-axiovex-cross-link/.
+      · indus-tracker-currency-2026-10-25 @0b1c9f19db0270ec6e98df8d09ff2dc7ef6c9387
+        — Oct 25 tracker-currency staging originals; promoted.
+      · indus-v9-promotion-staging-2026-10-26 @6d66e6428fa438b5bf8c5f5a60e878bae0bcc9a5
+        — v9 promotion staging originals; promoted.
+      · indus-v9-promotion-prod-2026-10-26 @ee3c90ec34e8a2eeb2cf68a7335e3bb10d1d17bb
+        — v9 promotion cherry-pick source; tree verified IDENTICAL
+        (0 differing paths) to main's promotion commit 43541234d.
+      Repo now carries main + staging only. Spent worktrees
+      (bitconcepts-website-prod, -wt, -xlink) removed the same day.
+
 - [x] T101 Inventory done: members tpierson@ + anagaraja@ (both Super
       Admin, accepted); IdPs inventoried (built-in Cloudflare +
       Microsoft Entra ID after T105)
