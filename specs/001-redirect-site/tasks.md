@@ -167,18 +167,20 @@
       Repo now carries main + staging only. Spent worktrees
       (bitconcepts-website-prod, -wt, -xlink) removed the same day.
 
-- [ ] T026 Homepage release pointer currency (2026-11-05): the
-      homepage FAQ (JSON-LD + visible Quick Answers) still named
-      v8 (DOI 10.5281/zenodo.23604590) as the latest release —
-      stale since the v9 promotion (Oct 26) and through v10
-      (DOI 10.5281/zenodo.23977473, published Nov 5, verified
-      from the tracker Study papers block + llms.txt + commit
-      d468a5eba). Pointer moved to v10 on homepage; sitemap
-      lastmod bumped to 2026-11-05. Tracker page itself verified
-      current the same day (as-of Nov 5, Spec 041 article,
-      912-claim program update, gap register); research index
-      stats verified against the tracker's audited figures
-      (287 / 94 with 6 independent / 73.68%) — unchanged.
+- [x] T026 Homepage release pointer currency (2026-11-05,
+      promoted same day on the owner's tap): the homepage FAQ
+      (JSON-LD + visible Quick Answers) named v8 (DOI
+      10.5281/zenodo.23604590) as the latest release — stale
+      since v9 (Oct 26) and through v10 (DOI
+      10.5281/zenodo.23977473, published Nov 5; verified from
+      the tracker Study papers block, llms.txt, and commit
+      d468a5eba). Pointer moved to v10; sitemap lastmod bumped
+      to 2026-11-05. Tracker page verified current the same
+      day (as-of Nov 5, Spec 041 article, 912-claim program
+      update, gap register); research index stats verified
+      against the tracker's audited figures (287 / 94 with 6
+      independent / 73.68%) — unchanged. Staged as 6dca58981,
+      served-staging verified before promotion.
 
 - [x] T101 Inventory done: members tpierson@ + anagaraja@ (both Super
       Admin, accepted); IdPs inventoried (built-in Cloudflare +
