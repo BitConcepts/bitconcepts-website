@@ -71,3 +71,15 @@ review.
   (tracker page, llms.txt, WF-04 wireframe, this spec). No
   staging guard file (robots.txt, _headers, index.html, any
   noindex meta) moved to main.
+
+## Amendment — REMOVED (owner order, 2026-11-06)
+
+On 2026-11-06 the owner ordered all crosslinks between
+axiovexsystems.com and bitconcepts.tech removed from both
+websites (order issued in the Axiovex Systems chat). Executed
+here as T027: the "Related research" section (this spec's
+surface) was removed in full from research/indus-script/, and
+the matching "Related research" line was removed from
+llms.txt. This spec is retained as the historical record of
+the crosslink and its removal; the link itself no longer
+exists on any served BitConcepts surface.
