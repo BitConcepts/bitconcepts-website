@@ -182,15 +182,21 @@
       independent / 73.68%) — unchanged. Staged as 6dca58981,
       served-staging verified before promotion.
 
-- [ ] T027 Crosslink removal (owner order 2026-11-06, issued in
-      the Axiovex Systems chat): remove every link between
-      bitconcepts.tech and axiovexsystems.com. Inventory
-      (verified first-hand): the Spec 003 "Related research"
-      section on research/indus-script/ (sole content: the
+- [x] T027 Crosslink removal (owner order 2026-11-06, issued in
+      the Axiovex Systems chat; promoted same day under that
+      order): every link between bitconcepts.tech and
+      axiovexsystems.com removed. Inventory (verified
+      first-hand): the Spec 003 "Related research" section on
+      research/indus-script/ (sole content: the
       axiovexsystems.com/research/ link) and one "Related
       research" line in llms.txt. Homepage and research index
-      carry none. Section and line removed; removal recorded
-      as an amendment in specs/003-axiovex-cross-link/spec.md.
+      carried none. Section and line removed in full (the
+      section existed only for the crosslink; no linkless
+      mention retained, per the order's intent to separate
+      the two public surfaces). Removal recorded as an
+      amendment in specs/003-axiovex-cross-link/spec.md.
+      Staged as ef0ced59b, served-staging verified (zero
+      axiovex mentions, guards intact, CI green).
 
 - [x] T101 Inventory done: members tpierson@ + anagaraja@ (both Super
       Admin, accepted); IdPs inventoried (built-in Cloudflare +
