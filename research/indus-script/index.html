@@ -438,7 +438,7 @@
             <span class="own-sub">Research</span>
           </span>
         </span>
-        <span class="asof">Program record as of November 13, 2026</span>
+        <span class="asof">Program record as of November 15, 2026</span>
         <nav aria-label="Program records">
           <a href="https://github.com/BitConcepts/glossa-lab" target="_blank" rel="noopener">GitHub repository</a>
           <a href="https://doi.org/10.5281/zenodo.20379070" target="_blank" rel="noopener">Zenodo archive</a>
@@ -610,6 +610,32 @@
           <p class="sec-note">Articles are added here when a significant finding is confirmed — at most one per day.</p>
         </div>
         <p class="sec-intro">The audit section above is this page&rsquo;s current-status statement; the articles below are dated records, and where the audit supersedes an article&rsquo;s wording, the audit governs.</p>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">November 15, 2026 · BitConcepts Research</p>
+    <p class="a-title">The Zipf controls test could not run, because the strict corpus it had to fit could not be identified and pinned: the study closed at its third check, STRICT CORPUS NOT PINNABLE.</p>
+    <p class="a-basis">Basis: Spec 053 (Phase-413) — the Yadav Zipf controls study, frozen before execution; freeze <a class="mono" href="https://github.com/BitConcepts/glossa-lab/pull/257" target="_blank" rel="noopener">PR #257</a> (freeze digest <span class="mono">fd2d5cb8</span>), public registration <a class="mono" href="https://osf.io/s9yfe/" target="_blank" rel="noopener">s9yfe</a> (approved and public before execution), execution <a class="mono" href="https://github.com/BitConcepts/glossa-lab/pull/277" target="_blank" rel="noopener">PR #277</a>, landing record <a class="mono" href="https://github.com/BitConcepts/glossa-lab/pull/288" target="_blank" rel="noopener">PR #288</a>.</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <p><em>What was to be tested.</em> A published analysis fitted a curve to how often each Indus sign occurs and reported a steepness value of about <span class="mono">1.35</span>. A curve of that kind is common in real writing, but it can also appear in systems that are not writing at all, so this study was designed to fit the same curve to known non-language systems (Mesopotamian numerical signs, heraldic charges, and a synthetic inventory) and to a known writing system, Linear B, as a working control. The Indus side was to be fitted on one named collection only: the strict V3 collection in the Mahadevan lineage.</p>
+    <p><em>What the run found.</em> The first two checks passed: every frozen input fingerprint recomputed exactly (an anchors file of <span class="mono">287</span> anchors, <span class="mono">94</span> in the strict independent set), and the fitting method recovered its own planted values inside the allowed errors (planted <span class="mono">1.20</span> and <span class="mono">2.0</span>; recovered <span class="mono">1.256</span> and <span class="mono">2.72</span>). The third check failed and the execution closed: <strong>STRICT CORPUS NOT PINNABLE</strong>. The V3 collection&rsquo;s only loading program reads one data file, a database dump that does not exist in the project tree, so it loads <span class="mono">0</span> sequences; no database copy exists in the execution tree; and no other collection in the tree is the corpus the earlier record names (<span class="mono">3,916</span> records, <span class="mono">3,137</span> sequences, <span class="mono">2,665</span> document keys, <span class="mono">12,494</span> sign instances, against <span class="mono">5,679</span> records for the site-attributed collection, <span class="mono">15,508</span> mixed-source objects for the older export, and <span class="mono">3,085</span> sequences in a different encoding). No substitute collection was fitted in its place. The last two checks were NOT REACHED: no control count was entered, and no census or floor judgement exists.</p>
+    <p><em>What it means, and what it does not.</em> The claim stands exactly as recorded: strongly supported, at the explained stage, with its recorded value of about <span class="mono">1.35</span>. No strength label was added or removed, and no system was fitted. This closure states nothing about whether the Indus frequencies are separable from non-language systems, nothing about whether the script encodes language, and nothing about any sign&rsquo;s meaning. The Indus script remains undeciphered, and this study adds no reading of any inscription.</p>
+  </div>
+</details>
+<details class="article" style="margin-bottom:16px">
+  <summary>
+    <p class="a-date">November 14, 2026 · BitConcepts Research</p>
+    <p class="a-title">The sky-signs test could not run at all, because the sign classification it needed was never built: the study closed at its first check, ASSET NOT FROZEN.</p>
+    <p class="a-basis">Basis: Spec 050 (Phase-416) — the Hunt sky-signs endings study, frozen before execution; design and freeze <a class="mono" href="https://github.com/BitConcepts/glossa-lab/pull/248" target="_blank" rel="noopener">PR #248</a>, public registration record <a class="mono" href="https://github.com/BitConcepts/glossa-lab/pull/262" target="_blank" rel="noopener">PR #262</a> (registration uwdmy, approved and public before execution), execution <a class="mono" href="https://github.com/BitConcepts/glossa-lab/pull/296" target="_blank" rel="noopener">PR #296</a>, landing record <a class="mono" href="https://github.com/BitConcepts/glossa-lab/pull/300" target="_blank" rel="noopener">PR #300</a>.</p>
+    <span class="a-toggle"><span class="lbl-open">Read the full article ↓</span><span class="lbl-close">Close article ↑</span></span>
+  </summary>
+  <div class="a-body">
+    <p><em>What was to be tested.</em> A published reading of the Indus material says that signs depicting sky or heavenly things gather at the ends of inscriptions. Testing that needs a fixed list classifying each sign by what it depicts, and a count of how often the sky signs stand last. The list — Asset A in the project&rsquo;s records — was to be built and frozen inside an earlier study, Spec 045, covered here on November 12, 2026. That study closed INVALID at its own early check, before its building step, so no sign was classified and no list or fingerprint ever came into existence. This study&rsquo;s frozen plan had anticipated exactly that state: at its freeze on October 21, 2026, no list fingerprint was asserted, because none existed; instead the plan quoted the building study&rsquo;s freeze digest (<span class="mono">5d8254dd</span>) as its contract anchor and fixed the one source file from which a fingerprint would be read when the test ran.</p>
+    <p><em>What the run found.</em> The first check, run in the frozen fail-closed order, closed the execution: the governed outcome is <strong>CLOSED AT STEP 0 — ASSET NOT FROZEN</strong>. The fixed source file does not exist, and neither does the list. The absence was verified first-hand at the execution base by two routes: a fresh copy&rsquo;s full listing of <span class="mono">5,718</span> file paths contains no list path of any kind, and the project&rsquo;s online file index returned &ldquo;not found&rdquo; for both the list folder and its freeze file, with its full recursive listing (<span class="mono">6,124</span> entries, not truncated) equally empty of them. The absence was checked a third time on the merged record itself (<span class="mono">5,716</span> files at the merge commit) and stands exactly as executed. Every later check was NOT REACHED — no census, because there is no sky class to count, and not even the TOO THIN closure arises, because that closure needs a real class whose total can be counted. No substitute list was created, no absent row was treated as &ldquo;not a sky sign&rdquo;, and no empty table was published as a result. The frozen hypothesis — a last-position rate at least <span class="mono">1.5</span> times the comparison rate, with its exact test and half-of-occurrences condition — was never judged.</p>
+    <p><em>What it means, and what it does not.</em> The claim stands <strong>UNTESTED</strong>, exactly as before: neither supported nor falsified. This closure states nothing about whether sky signs do or do not gather at the ends of texts, and nothing about calendars, cycles, or any sign&rsquo;s meaning. A successor could run the test only as a new act, under a new freeze, after a depicted-kind list is built and frozen; this record does not commission that act. A standing caution travels with the missing list: an earlier study in this programme found that labels for what an inscription is written on diverge between compilations in <span class="mono">49%</span> of matched cases, and the list was the design&rsquo;s answer to that caution — a construction that was never reached. The Indus script remains undeciphered, and this study adds no reading of any inscription.</p>
+  </div>
+</details>
 <details class="article" style="margin-bottom:16px">
   <summary>
     <p class="a-date">November 13, 2026 · BitConcepts Research</p>
@@ -1297,7 +1323,7 @@
         <a href="https://github.com/BitConcepts/glossa-lab" target="_blank" rel="noopener">Repository</a>
         <a href="https://doi.org/10.5281/zenodo.20379070" target="_blank" rel="noopener">Zenodo archive</a>
         <a href="https://osf.io/ybd65" target="_blank" rel="noopener">OSF record</a>
-        <span>Snapshot of the program record as of November 13, 2026.</span>
+        <span>Snapshot of the program record as of November 15, 2026.</span>
       </div>
     </footer>
 
